@@ -1,0 +1,605 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Relation"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#list",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://biblio.ugent.be/person/802002413821",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "harm.delva@ugent.be"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Harm Delva"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://biblio.ugent.be/person/802002413821"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology describes the OpenStreetMap data model."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "osm"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OpenStreetMaps Vocabulary"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Elements are the basic components of OpenStreetMap's conceptual data model of the physical world."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Elements"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Footway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Designated footpaths; i.e., mainly/exclusively for pedestrians."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=footway"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q3352369"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#HighwayValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the role and importance of the way within the road network."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HighwayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#LivingStreet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For living streets, which are residential streets where pedestrians have legal priority over cars."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=living_street"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q1628979"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Motorway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=motorway"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q46622"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#MotorwayLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The link roads leading to/from a motorway."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=motorway_link"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A node is one of the core elements in the OpenStreetMap data model.\n                              It consists of a single point in space defined by its latitude, longitude and node id."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/2003/01/geo/wgs84_pos#Point"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Relation"
+  }, {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Node"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A non-specific path."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=path"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Primary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The next most important roads in a country's system, after trunks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=primary"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#PrimaryLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The link roads leading to/from a primary road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=primary_link"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.\n                              It is used to define logical or geographic relationships between other elements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Relation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Residential",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=residential"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The next most important roads in a country's system, after primary roads."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=secondary"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SecondaryLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The link roads leading to/from a secondary road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=secondary_link"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For access roads to, or within an industrial estate, camp site, business park, car park etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=service"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Tertiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The next most important roads in a country's system, after secondary roads."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=tertiary"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#TertiaryLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The link roads leading to/from a tertiary road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=tertiary_link"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Track",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Roads for mostly agricultural or forestry uses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=track"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Trunk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The most important roads in a country's system that aren't motorways."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=trunk"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q1302778"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#TrunkLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The link roads leading to/from a trunk road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=trunk_link"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Unclassified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The least important through roads in a country's system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=unclassified"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Way",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A way is an ordered list of nodes which normally also has at least one tag."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Way"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Way"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#hasNodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ordered collection of nodes that describe the way. \n                              These may be fragmented over multiple predicates due to tiling for example.\n                              Each fragment should have enough overlap to reconstruct the original way."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#list"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#hasTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tag describes the meaning of a particular element in the OSM data model. \n                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. \n                              This property should be used for tags that don't have their semantics explicitly defined. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#highway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This the main property used to identify any kind of road, street or path."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#HighwayValue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#maxspeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://qudt.org/schema/qudt/hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/KM-PER-HR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to define the maximum legal speed limit, in km/h."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "maxspeed=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:maxspeed"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used for naming an element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/title"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:name"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/2003/01/geo/wgs84_pos#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q1302778",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q1628979",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q3352369",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q46622",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

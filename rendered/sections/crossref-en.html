@@ -1,0 +1,933 @@
+<html><h2 id="crossreference" class="list">Cross reference for OpenStreetMaps Vocabulary classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OpenStreetMaps Vocabulary.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Element" title="https://w3id.org/openstreetmap/terms#Element">Element</a>
+      </li>
+      <li>
+         <a href="#HighwayValue"
+            title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+      </li>
+      <li>
+         <a href="#Node" title="https://w3id.org/openstreetmap/terms#Node">Node</a>
+      </li>
+      <li>
+         <a href="#Relation" title="https://w3id.org/openstreetmap/terms#Relation">Relation</a>
+      </li>
+      <li>
+         <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+      </li>
+   </ul>
+   <div class="entity" id="Element">
+      <h3>Element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Element</p>
+      <div class="comment">
+         <span class="markdown">Elements are the basic components of OpenStreetMap's conceptual data model of the physical world.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Node" title="https://w3id.org/openstreetmap/terms#Node">Node</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Relation" title="https://w3id.org/openstreetmap/terms#Relation">Relation</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasTag" title="https://w3id.org/openstreetmap/terms#hasTag">hasTag</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="https://w3id.org/openstreetmap/terms#name">name=*</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HighwayValue">
+      <h3>HighwayValue<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#HighwayValue</p>
+      <div class="comment">
+         <span class="markdown">Indicates the role and importance of the way within the road network.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#highway" title="https://w3id.org/openstreetmap/terms#highway">highway=*</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Footway" title="https://w3id.org/openstreetmap/terms#Footway">highway=footway</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#LivingStreet"
+               title="https://w3id.org/openstreetmap/terms#LivingStreet">highway=living_street</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Motorway" title="https://w3id.org/openstreetmap/terms#Motorway">highway=motorway</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MotorwayLink"
+               title="https://w3id.org/openstreetmap/terms#MotorwayLink">highway=motorway_link</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Path" title="https://w3id.org/openstreetmap/terms#Path">highway=path</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Primary" title="https://w3id.org/openstreetmap/terms#Primary">highway=primary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PrimaryLink" title="https://w3id.org/openstreetmap/terms#PrimaryLink">highway=primary_link</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Residential" title="https://w3id.org/openstreetmap/terms#Residential">highway=residential</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Secondary" title="https://w3id.org/openstreetmap/terms#Secondary">highway=secondary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SecondaryLink"
+               title="https://w3id.org/openstreetmap/terms#SecondaryLink">highway=secondary_link</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Service" title="https://w3id.org/openstreetmap/terms#Service">highway=service</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tertiary" title="https://w3id.org/openstreetmap/terms#Tertiary">highway=tertiary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TertiaryLink"
+               title="https://w3id.org/openstreetmap/terms#TertiaryLink">highway=tertiary_link</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Track" title="https://w3id.org/openstreetmap/terms#Track">highway=track</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Trunk" title="https://w3id.org/openstreetmap/terms#Trunk">highway=trunk</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TrunkLink" title="https://w3id.org/openstreetmap/terms#TrunkLink">highway=trunk_link</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Unclassified"
+               title="https://w3id.org/openstreetmap/terms#Unclassified">highway=unclassified</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Node">
+      <h3>Node<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Node</p>
+      <div class="comment">
+         <span class="markdown">A node is one of the core elements in the OpenStreetMap data model.
+                              It consists of a single point in space defined by its latitude, longitude and node id.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://www.w3.org/2003/01/geo/wgs84_pos#Point">point</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Relation" title="https://w3id.org/openstreetmap/terms#Relation">Relation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Relation">
+      <h3>Relation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Relation</p>
+      <div class="comment">
+         <span class="markdown">A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.
+                              It is used to define logical or geographic relationships between other elements.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Node" title="https://w3id.org/openstreetmap/terms#Node">Node</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Way">
+      <h3>Way<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Way</p>
+      <div class="comment">
+         <span class="markdown">A way is an ordered list of nodes which normally also has at least one tag.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#highway" title="https://w3id.org/openstreetmap/terms#highway">highway=*</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#maxspeed" title="https://w3id.org/openstreetmap/terms#maxspeed">maxspeed=*</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNodes" title="https://w3id.org/openstreetmap/terms#hasNodes">nodes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Node" title="https://w3id.org/openstreetmap/terms#Node">Node</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Relation" title="https://w3id.org/openstreetmap/terms#Relation">Relation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#highway" title="https://w3id.org/openstreetmap/terms#highway">highway=*</a>
+      </li>
+      <li>
+         <a href="#hasNodes" title="https://w3id.org/openstreetmap/terms#hasNodes">nodes</a>
+      </li>
+   </ul>
+   <div class="entity" id="highway">
+      <h3>highway=*<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#highway</p>
+      <div class="comment">
+         <span class="markdown">This the main property used to identify any kind of road, street or path.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#HighwayValue"
+                  title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNodes">
+      <h3>nodes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#hasNodes</p>
+      <div class="comment">
+         <span class="markdown">An ordered collection of nodes that describe the way. 
+                              These may be fragmented over multiple predicates due to tiling for example.
+                              Each fragment should have enough overlap to reconstruct the original way.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#list">list</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasTag" title="https://w3id.org/openstreetmap/terms#hasTag">hasTag</a>
+      </li>
+      <li>
+         <a href="#maxspeed" title="https://w3id.org/openstreetmap/terms#maxspeed">maxspeed=*</a>
+      </li>
+      <li>
+         <a href="#name" title="https://w3id.org/openstreetmap/terms#name">name=*</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasTag">
+      <h3>hasTag<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#hasTag</p>
+      <div class="comment">
+         <span class="markdown">A tag describes the meaning of a particular element in the OSM data model. 
+                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. 
+                              This property should be used for tags that don't have their semantics explicitly defined. </span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Element" title="https://w3id.org/openstreetmap/terms#Element">Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxspeed">
+      <h3>maxspeed=*<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#maxspeed</p>
+      <div class="comment">
+         <span class="markdown">Used to define the maximum legal speed limit, in km/h.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Way" title="https://w3id.org/openstreetmap/terms#Way">Way</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name=*<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#name</p>
+      <div class="comment">
+         <span class="markdown">Used for naming an element.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/title">title</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Element" title="https://w3id.org/openstreetmap/terms#Element">Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://biblio.ugent.be/person/802002413821" title="https://biblio.ugent.be/person/802002413821">
+            <span>802002413821</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Footway" title="https://w3id.org/openstreetmap/terms#Footway">highway=footway</a>
+      </li>
+      <li>
+         <a href="#LivingStreet"
+            title="https://w3id.org/openstreetmap/terms#LivingStreet">highway=living_street</a>
+      </li>
+      <li>
+         <a href="#Motorway" title="https://w3id.org/openstreetmap/terms#Motorway">highway=motorway</a>
+      </li>
+      <li>
+         <a href="#MotorwayLink"
+            title="https://w3id.org/openstreetmap/terms#MotorwayLink">highway=motorway_link</a>
+      </li>
+      <li>
+         <a href="#Path" title="https://w3id.org/openstreetmap/terms#Path">highway=path</a>
+      </li>
+      <li>
+         <a href="#Primary" title="https://w3id.org/openstreetmap/terms#Primary">highway=primary</a>
+      </li>
+      <li>
+         <a href="#PrimaryLink" title="https://w3id.org/openstreetmap/terms#PrimaryLink">highway=primary_link</a>
+      </li>
+      <li>
+         <a href="#Residential" title="https://w3id.org/openstreetmap/terms#Residential">highway=residential</a>
+      </li>
+      <li>
+         <a href="#Secondary" title="https://w3id.org/openstreetmap/terms#Secondary">highway=secondary</a>
+      </li>
+      <li>
+         <a href="#SecondaryLink"
+            title="https://w3id.org/openstreetmap/terms#SecondaryLink">highway=secondary_link</a>
+      </li>
+      <li>
+         <a href="#Service" title="https://w3id.org/openstreetmap/terms#Service">highway=service</a>
+      </li>
+      <li>
+         <a href="#Tertiary" title="https://w3id.org/openstreetmap/terms#Tertiary">highway=tertiary</a>
+      </li>
+      <li>
+         <a href="#TertiaryLink"
+            title="https://w3id.org/openstreetmap/terms#TertiaryLink">highway=tertiary_link</a>
+      </li>
+      <li>
+         <a href="#Track" title="https://w3id.org/openstreetmap/terms#Track">highway=track</a>
+      </li>
+      <li>
+         <a href="#Trunk" title="https://w3id.org/openstreetmap/terms#Trunk">highway=trunk</a>
+      </li>
+      <li>
+         <a href="#TrunkLink" title="https://w3id.org/openstreetmap/terms#TrunkLink">highway=trunk_link</a>
+      </li>
+      <li>
+         <a href="#Unclassified"
+            title="https://w3id.org/openstreetmap/terms#Unclassified">highway=unclassified</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/openstreetmap/terms" title="https://w3id.org/openstreetmap/terms">
+            <span>terms</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://biblio.ugent.be/person/802002413821">
+      <h3>802002413821<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://biblio.ugent.be/person/802002413821</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Footway">
+      <h3>highway=footway<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Footway</p>
+      <div class="comment">
+         <span class="markdown">Designated footpaths; i.e., mainly/exclusively for pedestrians.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <span class="dotted" title="https://www.wikidata.org/wiki/Q3352369">q3352369</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LivingStreet">
+      <h3>highway=living_street<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#LivingStreet</p>
+      <div class="comment">
+         <span class="markdown">For living streets, which are residential streets where pedestrians have legal priority over cars.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <span class="dotted" title="https://www.wikidata.org/wiki/Q1628979">q1628979</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Motorway">
+      <h3>highway=motorway<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Motorway</p>
+      <div class="comment">
+         <span class="markdown">A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <span class="dotted" title="https://www.wikidata.org/wiki/Q46622">q46622</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MotorwayLink">
+      <h3>highway=motorway_link<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#MotorwayLink</p>
+      <div class="comment">
+         <span class="markdown">The link roads leading to/from a motorway.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Path">
+      <h3>highway=path<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Path</p>
+      <div class="comment">
+         <span class="markdown">A non-specific path.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Primary">
+      <h3>highway=primary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Primary</p>
+      <div class="comment">
+         <span class="markdown">The next most important roads in a country's system, after trunks.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PrimaryLink">
+      <h3>highway=primary_link<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#PrimaryLink</p>
+      <div class="comment">
+         <span class="markdown">The link roads leading to/from a primary road.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Residential">
+      <h3>highway=residential<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Residential</p>
+      <div class="comment">
+         <span class="markdown">Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Secondary">
+      <h3>highway=secondary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Secondary</p>
+      <div class="comment">
+         <span class="markdown">The next most important roads in a country's system, after primary roads.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SecondaryLink">
+      <h3>highway=secondary_link<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#SecondaryLink</p>
+      <div class="comment">
+         <span class="markdown">The link roads leading to/from a secondary road.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Service">
+      <h3>highway=service<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Service</p>
+      <div class="comment">
+         <span class="markdown">For access roads to, or within an industrial estate, camp site, business park, car park etc.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tertiary">
+      <h3>highway=tertiary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Tertiary</p>
+      <div class="comment">
+         <span class="markdown">The next most important roads in a country's system, after secondary roads.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TertiaryLink">
+      <h3>highway=tertiary_link<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#TertiaryLink</p>
+      <div class="comment">
+         <span class="markdown">The link roads leading to/from a tertiary road.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Track">
+      <h3>highway=track<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Track</p>
+      <div class="comment">
+         <span class="markdown">Roads for mostly agricultural or forestry uses.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Trunk">
+      <h3>highway=trunk<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Trunk</p>
+      <div class="comment">
+         <span class="markdown">The most important roads in a country's system that aren't motorways.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is same as</dt>
+         <dd>
+            <span class="dotted" title="https://www.wikidata.org/wiki/Q1302778">q1302778</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TrunkLink">
+      <h3>highway=trunk_link<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#TrunkLink</p>
+      <div class="comment">
+         <span class="markdown">The link roads leading to/from a trunk road.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Unclassified">
+      <h3>highway=unclassified<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms#Unclassified</p>
+      <div class="comment">
+         <span class="markdown">The least important through roads in a country's system.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/openstreetmap/terms#">https://w3id.org/openstreetmap/terms#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#HighwayValue"
+               title="https://w3id.org/openstreetmap/terms#HighwayValue">HighwayValue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/openstreetmap/terms">
+      <h3>terms<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/openstreetmap/terms</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Document">document</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

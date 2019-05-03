@@ -1,0 +1,933 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://www.w3.org/2003/01/geo/wgs84_pos", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/openstreetmap/terms" ],
+    "iri" : "https://w3id.org/openstreetmap/terms#",
+    "author" : [ "https://biblio.ugent.be/person/802002413821" ],
+    "description" : {
+      "en" : "This ontology describes the OpenStreetMap data model."
+    },
+    "labels" : {
+      "en" : "OpenStreetMaps Vocabulary"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://biblio.ugent.be/person/802002413821",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "osm",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 9,
+    "objectPropertyCount" : 2,
+    "datatypePropertyCount" : 4,
+    "individualCount" : 23
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/openstreetmap/terms#Element",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Elements",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Element",
+      "en" : "Element"
+    },
+    "union" : [ "4", "1", "5" ],
+    "comment" : {
+      "en" : "Elements are the basic components of OpenStreetMap's conceptual data model of the physical world."
+    },
+    "attributes" : [ "union" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#Node",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Node",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Node",
+      "en" : "Node"
+    },
+    "comment" : {
+      "en" : "A node is one of the core elements in the OpenStreetMap data model.\n                              It consists of a single point in space defined by its latitude, longitude and node id."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "14",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#list",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "list"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#Way",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Way",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Way",
+      "en" : "Way"
+    },
+    "comment" : {
+      "en" : "A way is an ordered list of nodes which normally also has at least one tag."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "baseIri" : "https://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#HighwayValue",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighwayValue",
+      "en" : "HighwayValue"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/openstreetmap/terms#TrunkLink",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The link roads leading to/from a trunk road."
+      },
+      "labels" : {
+        "IRI-based" : "TrunkLink",
+        "en" : "highway=trunk_link"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Tertiary",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The next most important roads in a country's system, after secondary roads."
+      },
+      "labels" : {
+        "IRI-based" : "Tertiary",
+        "en" : "highway=tertiary"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Secondary",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The next most important roads in a country's system, after primary roads."
+      },
+      "labels" : {
+        "IRI-based" : "Secondary",
+        "en" : "highway=secondary"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Trunk",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The most important roads in a country's system that aren't motorways."
+      },
+      "labels" : {
+        "IRI-based" : "Trunk",
+        "en" : "highway=trunk"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Path",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A non-specific path."
+      },
+      "labels" : {
+        "IRI-based" : "Path",
+        "en" : "highway=path"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#SecondaryLink",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The link roads leading to/from a secondary road."
+      },
+      "labels" : {
+        "IRI-based" : "SecondaryLink",
+        "en" : "highway=secondary_link"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Footway",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Designated footpaths; i.e., mainly/exclusively for pedestrians."
+      },
+      "labels" : {
+        "IRI-based" : "Footway",
+        "en" : "highway=footway"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Service",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "For access roads to, or within an industrial estate, camp site, business park, car park etc."
+      },
+      "labels" : {
+        "IRI-based" : "Service",
+        "en" : "highway=service"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#TertiaryLink",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The link roads leading to/from a tertiary road."
+      },
+      "labels" : {
+        "IRI-based" : "TertiaryLink",
+        "en" : "highway=tertiary_link"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Primary",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The next most important roads in a country's system, after trunks."
+      },
+      "labels" : {
+        "IRI-based" : "Primary",
+        "en" : "highway=primary"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#MotorwayLink",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The link roads leading to/from a motorway."
+      },
+      "labels" : {
+        "IRI-based" : "MotorwayLink",
+        "en" : "highway=motorway_link"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Motorway",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."
+      },
+      "labels" : {
+        "IRI-based" : "Motorway",
+        "en" : "highway=motorway"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#PrimaryLink",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The link roads leading to/from a primary road."
+      },
+      "labels" : {
+        "IRI-based" : "PrimaryLink",
+        "en" : "highway=primary_link"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#LivingStreet",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "For living streets, which are residential streets where pedestrians have legal priority over cars."
+      },
+      "labels" : {
+        "IRI-based" : "LivingStreet",
+        "en" : "highway=living_street"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Track",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Roads for mostly agricultural or forestry uses."
+      },
+      "labels" : {
+        "IRI-based" : "Track",
+        "en" : "highway=track"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Residential",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing."
+      },
+      "labels" : {
+        "IRI-based" : "Residential",
+        "en" : "highway=residential"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Unclassified",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The least important through roads in a country's system."
+      },
+      "labels" : {
+        "IRI-based" : "Unclassified",
+        "en" : "highway=unclassified"
+      }
+    } ],
+    "comment" : {
+      "en" : "Indicates the role and importance of the way within the road network."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/openstreetmap/terms",
+      "baseIri" : "https://w3id.org/openstreetmap",
+      "annotations" : {
+        "primaryTopic" : [ {
+          "identifier" : "primaryTopic",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "terms"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#Relation",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Relation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relation",
+      "en" : "Relation"
+    },
+    "comment" : {
+      "en" : "A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.\n                              It is used to define logical or geographic relationships between other elements."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://biblio.ugent.be/person/802002413821",
+      "baseIri" : "https://biblio.ugent.be/person",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Harm Delva",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "harm.delva@ugent.be",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "802002413821"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/openstreetmap/terms#highway",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "highway",
+      "en" : "highway=*"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This the main property used to identify any kind of road, street or path."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#hasNodes",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNodes",
+      "en" : "nodes"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "An ordered collection of nodes that describe the way. \n                              These may be fragmented over multiple predicates due to tiling for example.\n                              Each fragment should have enough overlap to reconstruct the original way."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#maxspeed",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "hasUnit" : [ {
+        "identifier" : "hasUnit",
+        "language" : "undefined",
+        "value" : "http://qudt.org/vocab/unit/KM-PER-HR",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Key:maxspeed",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maxspeed",
+      "en" : "maxspeed=*"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Used to define the maximum legal speed limit, in km/h."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#name",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Key:name",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name=*"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Used for naming an element."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#hasTag",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTag",
+      "en" : "hasTag"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "A tag describes the meaning of a particular element in the OSM data model. \n                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. \n                              This property should be used for tags that don't have their semantics explicitly defined. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  } ]
+}

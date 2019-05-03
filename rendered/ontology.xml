@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/openstreetmap/terms#"
+     xml:base="https://w3id.org/openstreetmap/terms"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/openstreetmap/terms#">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:creator rdf:resource="https://biblio.ugent.be/person/802002413821"/>
+        <terms:description xml:lang="en">This ontology describes the OpenStreetMap data model.</terms:description>
+        <vann:preferredNamespacePrefix>osm</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/openstreetmap/terms#</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="en">OpenStreetMaps Vocabulary</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasUnit -->
+
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/hasUnit"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#hasNodes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/openstreetmap/terms#hasNodes">
+        <rdfs:domain rdf:resource="https://w3id.org/openstreetmap/terms#Way"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#list"/>
+        <rdfs:comment xml:lang="en">An ordered collection of nodes that describe the way. 
+                              These may be fragmented over multiple predicates due to tiling for example.
+                              Each fragment should have enough overlap to reconstruct the original way.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">nodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#highway -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/openstreetmap/terms#highway">
+        <rdfs:domain rdf:resource="https://w3id.org/openstreetmap/terms#Way"/>
+        <rdfs:range rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">This the main property used to identify any kind of road, street or path.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=*</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#hasTag -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/openstreetmap/terms#hasTag">
+        <rdfs:domain rdf:resource="https://w3id.org/openstreetmap/terms#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A tag describes the meaning of a particular element in the OSM data model. 
+                              It consists of two free format text fields; a &apos;key&apos; and a &apos;value&apos; and are formatted as &apos;{key}={value}&apos;. 
+                              This property should be used for tags that don&apos;t have their semantics explicitly defined. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">hasTag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#maxspeed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/openstreetmap/terms#maxspeed">
+        <rdfs:domain rdf:resource="https://w3id.org/openstreetmap/terms#Way"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <qudt:hasUnit rdf:resource="http://qudt.org/vocab/unit/KM-PER-HR"/>
+        <rdfs:comment xml:lang="en">Used to define the maximum legal speed limit, in km/h.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">maxspeed=*</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:maxspeed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/openstreetmap/terms#name">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+        <rdfs:domain rdf:resource="https://w3id.org/openstreetmap/terms#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Used for naming an element.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">name=*</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#list -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#list"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/openstreetmap/terms#Element">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/openstreetmap/terms#Node"/>
+                    <rdf:Description rdf:about="https://w3id.org/openstreetmap/terms#Relation"/>
+                    <rdf:Description rdf:about="https://w3id.org/openstreetmap/terms#Way"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Elements are the basic components of OpenStreetMap&apos;s conceptual data model of the physical world.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">Element</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Elements"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#HighwayValue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/openstreetmap/terms#HighwayValue">
+        <rdfs:comment xml:lang="en">Indicates the role and importance of the way within the road network.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">HighwayValue</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Node -->
+
+
+    <owl:Class rdf:about="https://w3id.org/openstreetmap/terms#Node">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/openstreetmap/terms#Relation"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/openstreetmap/terms#Way"/>
+        <rdfs:comment xml:lang="en">A node is one of the core elements in the OpenStreetMap data model.
+                              It consists of a single point in space defined by its latitude, longitude and node id.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">Node</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Node"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Relation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/openstreetmap/terms#Relation">
+        <owl:disjointWith rdf:resource="https://w3id.org/openstreetmap/terms#Way"/>
+        <rdfs:comment xml:lang="en">A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.
+                              It is used to define logical or geographic relationships between other elements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Way -->
+
+
+    <owl:Class rdf:about="https://w3id.org/openstreetmap/terms#Way">
+        <rdfs:comment xml:lang="en">A way is an ordered list of nodes which normally also has at least one tag.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">Way</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Way"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://biblio.ugent.be/person/802002413821 -->
+
+
+    <owl:NamedIndividual rdf:about="https://biblio.ugent.be/person/802002413821">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox>harm.delva@ugent.be</foaf:mbox>
+        <foaf:name>Harm Delva</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <foaf:primaryTopic rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Footway -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Footway">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q3352369"/>
+        <rdfs:comment xml:lang="en">Designated footpaths; i.e., mainly/exclusively for pedestrians.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=footway</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#LivingStreet -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#LivingStreet">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1628979"/>
+        <rdfs:comment xml:lang="en">For living streets, which are residential streets where pedestrians have legal priority over cars.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=living_street</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Motorway -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Motorway">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q46622"/>
+        <rdfs:comment xml:lang="en">A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=motorway</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#MotorwayLink -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#MotorwayLink">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The link roads leading to/from a motorway.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=motorway_link</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Path -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Path">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">A non-specific path.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=path</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Primary -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Primary">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The next most important roads in a country&apos;s system, after trunks.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=primary</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#PrimaryLink -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#PrimaryLink">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The link roads leading to/from a primary road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=primary_link</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Residential -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Residential">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=residential</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Secondary -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Secondary">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The next most important roads in a country&apos;s system, after primary roads.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=secondary</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#SecondaryLink -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#SecondaryLink">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The link roads leading to/from a secondary road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=secondary_link</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Service -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Service">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">For access roads to, or within an industrial estate, camp site, business park, car park etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=service</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Tertiary -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Tertiary">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The next most important roads in a country&apos;s system, after secondary roads.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=tertiary</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#TertiaryLink -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#TertiaryLink">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The link roads leading to/from a tertiary road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=tertiary_link</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Track -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Track">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">Roads for mostly agricultural or forestry uses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=track</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Trunk -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Trunk">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1302778"/>
+        <rdfs:comment xml:lang="en">The most important roads in a country&apos;s system that aren&apos;t motorways.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=trunk</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#TrunkLink -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#TrunkLink">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The link roads leading to/from a trunk road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=trunk_link</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/openstreetmap/terms#Unclassified -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/openstreetmap/terms#Unclassified">
+        <rdf:type rdf:resource="https://w3id.org/openstreetmap/terms#HighwayValue"/>
+        <rdfs:comment xml:lang="en">The least important through roads in a country&apos;s system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/openstreetmap/terms#"/>
+        <rdfs:label xml:lang="en">highway=unclassified</rdfs:label>
+        <prov:wasInfluencedBy rdf:resource="https://wiki.openstreetmap.org/wiki/Key:highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1302778 -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q1302778"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q1628979 -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q1628979"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q3352369 -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q3352369"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q46622 -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q46622"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,280 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix geo:    <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix osm:    <https://w3id.org/openstreetmap/terms#> .
+@prefix qudt:   <http://qudt.org/schema/qudt/> .
+@prefix unit:   <http://qudt.org/vocab/unit/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+
+
+# About
+
+<https://w3id.org/openstreetmap/terms>
+        a                 foaf:Document ;
+        foaf:primaryTopic osm: .
+
+osm:    a                              owl:Ontology ;
+        dct:description                "This ontology describes the OpenStreetMap data model."@en ;
+        cc:license                     <https://creativecommons.org/licenses/by/4.0/> ;
+        rdfs:label                     "OpenStreetMaps Vocabulary"@en ;
+        vann:preferredNamespacePrefix  "osm" ;
+        vann:preferredNamespaceUri     "https://w3id.org/openstreetmap/terms#";
+        dct:creator                    <https://biblio.ugent.be/person/802002413821> .
+
+<https://biblio.ugent.be/person/802002413821> 
+        a                 foaf:Person ;
+        foaf:name         "Harm Delva" ;
+        foaf:mbox         "harm.delva@ugent.be" .
+
+
+# Element Classes
+
+osm:Node  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          """A node is one of the core elements in the OpenStreetMap data model.
+                              It consists of a single point in space defined by its latitude, longitude and node id."""@en ;
+        rdfs:label            "Node"@en ;
+        rdfs:subClassOf       geo:Point ;
+        owl:disjointWith      osm:Way , osm:Relation ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Node> .
+        
+osm:Way  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A way is an ordered list of nodes which normally also has at least one tag."@en ;
+        rdfs:label            "Way"@en ;
+        owl:disjointWith      osm:Node , osm:Relation ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Way> .
+        
+osm:Relation  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          """A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.
+                              It is used to define logical or geographic relationships between other elements."""@en ;
+        rdfs:label            "Relation"@en ;
+        owl:disjointWith      osm:Node , osm:Way ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Relation> .
+        
+osm:Element
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "Elements are the basic components of OpenStreetMap's conceptual data model of the physical world."@en ;
+        rdfs:label            "Element"@en ;
+        owl:unionOf           (osm:Node osm:Way osm:Relation) ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Elements> .
+
+
+# Object Properties
+
+osm:hasNodes
+        a                     owl:ObjectProperty , rdf:Property ;
+        rdfs:comment          """An ordered collection of nodes that describe the way. 
+                              These may be fragmented over multiple predicates due to tiling for example.
+                              Each fragment should have enough overlap to reconstruct the original way."""@en ;
+        rdfs:label            "hasNodes"@en ;
+        rdfs:isDefinedBy      osm: ;
+        rdfs:domain           osm:Way ;
+        rdfs:range            rdf:list .
+
+osm:highway
+        a                      owl:ObjectProperty , rdf:Property ;
+        owl:equivalentProperty <https://www.wikidata.org/wiki/Q57977870> ;
+        rdfs:comment           "This the main property used to identify any kind of road, street or path."@en ;
+        rdfs:label             "highway=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:HighwayValue .
+
+
+# Data properties
+
+osm:name
+        a                       owl:DatatypeProperty , rdf:Property ;
+        rdfs:subPropertyOf      dct:title ;
+        owl:equivalentProperty  <https://www.wikidata.org/wiki/Q82799> ;
+        rdfs:comment            "Used for naming an element."@en ;
+        rdfs:label              "name=*"@en ;
+        rdfs:isDefinedBy        osm: ;
+        prov:wasInfluencedBy    <https://wiki.openstreetmap.org/wiki/Key:name> ;
+        rdfs:domain             osm:Element ;
+        rdfs:range              rdfs:Literal .
+
+osm:hasTag
+        a                     owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment          """A tag describes the meaning of a particular element in the OSM data model. 
+                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. 
+                              This property should be used for tags that don't have their semantics explicitly defined. """@en ;
+        rdfs:label            "hasTag"@en ;
+        rdfs:isDefinedBy      osm: ;
+        rdfs:domain           osm:Element ;
+        rdfs:range            xsd:string .
+
+osm:maxspeed
+        a                     owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment          "Used to define the maximum legal speed limit, in km/h."@en ;
+        rdfs:label            "maxspeed=*"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:maxspeed> ;
+        qudt:hasUnit          unit:KM-PER-HR ;
+        rdfs:domain           osm:Way ;
+        rdfs:range            xsd:double .
+
+
+# Tag Values
+
+osm:HighwayValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "Indicates the role and importance of the way within the road network."@en ;
+        rdfs:label            "HighwayValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+
+# Individuals
+
+
+# Roads
+
+osm:Motorway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <https://www.wikidata.org/wiki/Q46622> ;
+        rdfs:comment          "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."@en ;
+        rdfs:label            "highway=motorway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Trunk  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <https://www.wikidata.org/wiki/Q1302778> ;
+        rdfs:comment          "The most important roads in a country's system that aren't motorways."@en ;
+        rdfs:label            "highway=trunk"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Primary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after trunks."@en ;
+        rdfs:label            "highway=primary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Secondary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after primary roads."@en ;
+        rdfs:label            "highway=secondary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Tertiary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after secondary roads."@en ;
+        rdfs:label            "highway=tertiary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Unclassified  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The least important through roads in a country's system."@en ;
+        rdfs:label            "highway=unclassified"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Residential  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing."@en ;
+        rdfs:label            "highway=residential"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+
+# Links Roads
+
+osm:MotorwayLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a motorway."@en ;
+        rdfs:label            "highway=motorway_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:TrunkLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a trunk road."@en ;
+        rdfs:label            "highway=trunk_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:PrimaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a primary road."@en ;
+        rdfs:label            "highway=primary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:SecondaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a secondary road."@en ;
+        rdfs:label            "highway=secondary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:TertiaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a tertiary road."@en ;
+        rdfs:label            "highway=tertiary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+
+# Special Road Types
+
+osm:Service  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "For access roads to, or within an industrial estate, camp site, business park, car park etc."@en ;
+        rdfs:label            "highway=service"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Track  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Roads for mostly agricultural or forestry uses."@en ;
+        rdfs:label            "highway=track"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Footway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <https://www.wikidata.org/wiki/Q3352369> ;
+        rdfs:comment          "Designated footpaths; i.e., mainly/exclusively for pedestrians."@en ;
+        rdfs:label            "highway=footway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Path  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "A non-specific path."@en ;
+        rdfs:label            "highway=path"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:LivingStreet  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <https://www.wikidata.org/wiki/Q1628979> ;
+        rdfs:comment          "For living streets, which are residential streets where pedestrians have legal priority over cars."@en ;
+        rdfs:label            "highway=living_street"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Cycleway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <https://www.wikidata.org/wiki/Q1628979> ;
+        rdfs:comment          "For designated cycleways."@en ;
+        rdfs:label            "highway=cycleway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
