@@ -20,6 +20,7 @@
 			"tertiary_link": "osm:TertiaryLink",
 			"service": "osm:Service",
 			"track": "osm:Track",
+			"pedestrian": "osm:Pedestrian",
 			"footway": "osm:Footway",
 			"path": "osm:Path",
 			"living_street": "osm:LivingStreet",
