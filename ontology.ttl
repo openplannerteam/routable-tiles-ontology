@@ -415,7 +415,7 @@ osm:TracktypeValue
 
 osm:Motorway  
         a                     osm:HighwayValue ;
-        owl:sameAs            <https://www.wikidata.org/wiki/Q46622> ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q46622> ;
         rdfs:comment          "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."@en ;
         rdfs:label            "highway=motorway"@en ;
         rdfs:isDefinedBy      osm: ;
@@ -423,7 +423,7 @@ osm:Motorway
 
 osm:Trunk  
         a                     osm:HighwayValue ;
-        owl:sameAs            <https://www.wikidata.org/wiki/Q1302778> ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1302778> ;
         rdfs:comment          "The most important roads in a country's system that aren't motorways."@en ;
         rdfs:label            "highway=trunk"@en ;
         rdfs:isDefinedBy      osm: ;
@@ -521,7 +521,7 @@ osm:Track
 
 osm:Footway  
         a                     osm:HighwayValue ;
-        owl:sameAs            <https://www.wikidata.org/wiki/Q3352369> ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q3352369> ;
         rdfs:comment          "Designated footpaths; i.e., mainly/exclusively for pedestrians."@en ;
         rdfs:label            "highway=footway"@en ;
         rdfs:isDefinedBy      osm: ;
@@ -536,7 +536,7 @@ osm:Path
 
 osm:LivingStreet  
         a                     osm:HighwayValue ;
-        owl:sameAs            <https://www.wikidata.org/wiki/Q1628979> ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1628979> ;
         rdfs:comment          "For living streets, which are residential streets where pedestrians have legal priority over cars."@en ;
         rdfs:label            "highway=living_street"@en ;
         rdfs:isDefinedBy      osm: ;
@@ -544,7 +544,7 @@ osm:LivingStreet
 
 osm:Cycleway  
         a                     osm:HighwayValue ;
-        owl:sameAs            <https://www.wikidata.org/wiki/Q1628979> ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1628979> ;
         rdfs:comment          "For designated cycleways."@en ;
         rdfs:label            "highway=cycleway"@en ;
         rdfs:isDefinedBy      osm: ;
