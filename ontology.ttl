@@ -175,24 +175,6 @@ osm:motorcar
         rdfs:domain            osm:Way ;
         rdfs:range             osm:AccessValue .
 
-osm:motorroad
-        a                      owl:ObjectProperty , rdf:Property ;
-        rdfs:comment           "Describe highways that have motorway-like access restrictions but that are not motorways."@en ;
-        rdfs:label             "motorroad=*"@en ;
-        rdfs:isDefinedBy       osm: ;
-        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:motorroad> ;
-        rdfs:domain            osm:Way ;
-        rdfs:range             osm:MotorroadValue .
-
-osm:mtb_scale
-        a                      owl:ObjectProperty , rdf:Property ;
-        rdfs:comment           "Provides a classification scheme for mapping the difficulty of trails suitable for mountain-biking."@en ;
-        rdfs:label             "mtb:scale=*"@en ;
-        rdfs:isDefinedBy       osm: ;
-        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:mtb:scale> ;
-        rdfs:domain            osm:Element ;
-        rdfs:range             osm:MtbScaleValue .
-
 osm:oneway_bicycle
         a                      owl:ObjectProperty , rdf:Property ;
         rdfs:comment           "Defines the oneway rules for cyclists."@en ;
@@ -343,33 +325,12 @@ osm:HighwayValue
         rdfs:isDefinedBy      osm: ;
         prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
 
-osm:MotorroadValue
-        a                     rdfs:Class , owl:Class ;
-        rdfs:comment          "Describe highways that have motorway-like access restrictions but that are not a motorway."@en ;
-        rdfs:label            "MotorroadValue"@en ;
-        rdfs:isDefinedBy      osm: ;
-        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:motorroad> .
-
-osm:MtbScaleValue
-        a                     rdfs:Class , owl:Class ;
-        rdfs:comment          "Provides a classification scheme for mapping the difficulty of trails suitable for mountain-biking."@en ;
-        rdfs:label            "MtbScaleValue"@en ;
-        rdfs:isDefinedBy      osm: ;
-        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:mtb:scale> .
-
 osm:OnewayValue
         a                     rdfs:Class , owl:Class ;
         rdfs:comment          "Indicate the access restriction on highways and other linear features."@en ;
         rdfs:label            "OnewayValue"@en ;
         rdfs:isDefinedBy      osm: ;
         prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:oneway> .
-
-osm:SegregatedValue
-        a                     rdfs:Class , owl:Class ;
-        rdfs:comment          "Used for combined cycle- and footways."@en ;
-        rdfs:label            "SegregatedValue"@en ;
-        rdfs:isDefinedBy      osm: ;
-        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:segregated> .
 
 osm:SmoothnessValue
         a                     rdfs:Class , owl:Class ;
@@ -1102,3 +1063,41 @@ osm:Wood
         rdfs:label            "surface=wood"@en ;
         rdfs:isDefinedBy      osm: ;
         prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+
+## Tracktype
+
+osm:Grade1
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Solid. Usually a paved or sealed surface."@en ;
+        rdfs:label            "tracktype=grade1"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade2
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Solid. Usually an unpaved track with surface of gravel."@en ;
+        rdfs:label            "tracktype=grade2"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade3
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Mostly solid. Even mixture of hard and soft materials."@en ;
+        rdfs:label            "tracktype=grade3"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade4
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Mostly soft. Almost always an unpaved track prominently with soil/sand/grass, but with some hard or compacted materials mixed in."@en ;
+        rdfs:label            "tracktype=grade4"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade5
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Soft. Almost always an unpaved track lacking additional materials, same surface as surrounding terrain."@en ;
+        rdfs:label            "tracktype=grade5"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
