@@ -99,7 +99,7 @@ osm:barrier
         rdfs:label             "barrier=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:barrier> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:BarrierValue .
 
 osm:bicycle
@@ -108,7 +108,7 @@ osm:bicycle
         rdfs:label             "bicycle=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:bicycle> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:AccessValue .
 
 osm:construction
@@ -117,7 +117,7 @@ osm:construction
         rdfs:label             "construction=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:construction> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:ConstructionValue .
 
 osm:crossing
@@ -126,7 +126,7 @@ osm:crossing
         rdfs:label             "crossing=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:crossing> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:CrossingValue .
 
 osm:cycleway
@@ -154,7 +154,7 @@ osm:highway
         rdfs:label             "highway=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:highway> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:HighwayValue .
 
 osm:motor_vehicle
@@ -219,7 +219,7 @@ osm:surface
         rdfs:label             "surface=*"@en ;
         rdfs:isDefinedBy       osm: ;
         prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:surface> ;
-        rdfs:domain            osm:Element ;
+        rdfs:domain            [ owl:unionOf    (osm:Node osm:Way) ] ;
         rdfs:range             osm:SurfaceValue .
 
 osm:tracktype
