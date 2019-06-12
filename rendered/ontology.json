@@ -5,7 +5,67 @@
     "@list" : [ {
       "@id" : "https://w3id.org/openstreetmap/terms#Node"
     }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
       "@id" : "https://w3id.org/openstreetmap/terms#Relation"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
+    }, {
+      "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/openstreetmap/terms#Node"
     }, {
       "@id" : "https://w3id.org/openstreetmap/terms#Way"
     } ]
@@ -22,6 +82,50 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q12511",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Steps"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q1302778",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Trunk"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q1628979",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#CycleHighway"
+  }, {
+    "@id" : "https://w3id.org/openstreetmap/terms#LivingStreet"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q189259",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Asphalt"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q3352369",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#FootHighway"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q46622",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Motorway"
+  } ]
+}, {
+  "@id" : "http://www.wikidata.org/entity/Q8010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#HighwayCrossing"
+  } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Document",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -76,6 +180,516 @@
     "@value" : "OpenStreetMaps Vocabulary"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#AccessValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to describe the legal access for highways and other transportation networks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Agricultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only for agricultural traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=agricultural"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Asphalt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This road has an asphalt surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=asphalt"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dasphalt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#BadSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by trekking bikes, normal cars and everything that can use roads with 'very bad' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=bad"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#BarrierValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A barrier is a physical structure which blocks or impedes movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BarrierValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Bidirectional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#OnewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is not a oneway street."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "oneway=no"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Block",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A large, solid, immobile block that can be moved only with heavy machinery or great effort."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=block"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Bollard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Solid (usually concrete or metal) pillar or pillars in the middle of the road to prevent passage by some traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=bollard"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:bollard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#BorderControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a control point at an international border between two countries. Passports or other forms of ID will be checked."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=border_control"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:border_control"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Bridleway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A way intended for use by horse riders."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=bridleway"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dbridleway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#BumpGate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A bump gate is a drive-through gate used in rural areas to provide a barrier to livestock that does not require the driver to exit the vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=bump_gate"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Bump_gate"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#BusTrap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A bus trap is a metal grate placed over a ditch or pit in the road with tines (sides) spaced far enough apart that small-diameter-wheeled (narrower axle) vehicles fall in between the tines but close enough that larger-diameter-wheeled vehicles, such as buses, may pass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=bus_trap"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Bus_trap"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#CattleGrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Bars in the road surface that allow wheeled vehicles but not animals to cross."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=cattle_grid"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Chain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A chain used to prevent motorised vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=chain"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Cobblestone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This road has an cobblestone surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=cobblestone"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Compacted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A mixture of larger (e.g., gravel) and smaller (e.g., sand) parts, compacted so the surface is more stable than loose gravel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=compacted"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dcompacted"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Concrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cement based concrete."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=concrete"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#ConstructionValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to describe a feature which is currently under construction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ConstructionValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:construction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#CrossingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This tag is used for more accurately describing specific types of pedestrian crossings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CrossingValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:crossing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Customers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only for customers of the element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=customers"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#CycleBarrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Barriers to bicycle traffic, most typically a pair of staggered steel bars perpendicular to the way itself whose gaps allow pedestrians to pass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=cycle_barrier"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#CycleHighway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For designated cycleways."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=cycleway"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#CyclewayValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Maps cycling infrastructure that is an inherent part of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CyclewayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:cycleway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Debris",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A road is blocked by debris with or without ground. This might be for short or long time. Often used as first step in blocking an abandoned road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=debris"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Delivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only when delivering to the element."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=customers"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Designated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A preferred or designated route."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=designated"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only when travelling to this element/area; i.e., local traffic only."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=destination"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Dirt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This road's surface is just dirt (earth)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=dirt"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Discouraged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A legal right of way exists but usage is officially discouraged."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=discouraged"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Dismount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Permitted for some vehicle (or animal) only if you dismount."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=dismount"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Element",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -90,13 +704,78 @@
     "@value" : "Element"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Elements"
   } ]
 }, {
-  "@id" : "https://w3id.org/openstreetmap/terms#Footway",
+  "@id" : "https://w3id.org/openstreetmap/terms#Emergency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only for emergency vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=emergency"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Entrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A gap in a linear barrier with nothing that limits passing through."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=entrance"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#ExcellentSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by roller blades, skate boards and everything that can use roads with 'good' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=excellent"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#FineGravel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A multilayer pavement with a stone or gravel basis and a topmost surface of firm, granular gravel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=fine_gravel"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#FootHighway",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -109,11 +788,263 @@
     "@language" : "en",
     "@value" : "highway=footway"
   } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q3352369"
-  } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#FootwayValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refines the osm:Footway for sidewalks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FootwayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:footway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Forestry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only for forestry traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=forestry"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#FreeAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The public has an official, legally-enshrined right of access; i.e., it's a right of way."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=yes"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Gate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An entrance that can be opened or closed to get through the barrier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=gate"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#GiveWay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Points where a traffic sign instructs traffic to cede priority."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=give_way"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dgive_way"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#GoodSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by racing bikes and everything that can use roads with 'intermediate' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=good"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grade1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#TracktypeValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Solid. Usually a paved or sealed surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=grade1"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grade2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#TracktypeValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Solid. Usually an unpaved track with surface of gravel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=grade2"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grade3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#TracktypeValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mostly solid. Even mixture of hard and soft materials."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=grade3"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grade4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#TracktypeValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mostly soft. Almost always an unpaved track prominently with soil/sand/grass, but with some hard or compacted materials mixed in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=grade4"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grade5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#TracktypeValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Soft. Almost always an unpaved track lacking additional materials, same surface as surrounding terrain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=grade5"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Grass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Grass covered ground."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=grass"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Gravel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Broken/crushed rock with sharp edges."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=gravel"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "No special surface, the ground itself has marks of human or animal usage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=ground"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#HighwayCrossing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pedestrians can cross a street here."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=crossing"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dcrossing"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#HighwayValue",
@@ -133,6 +1064,125 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#HorribleSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by heavy-duty off-road vehicles and everything that can use roads with 'very horrible' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=horrible"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#ImpassableSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Not usable by wheeled vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=impassable"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#InOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#OnewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a oneway street, with the direction being the same order of the way nodes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "oneway=yes"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#InReverseOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#OnewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a oneway street, with the direction being the reverse of the order of the way nodes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "oneway=-1"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#IntermediateSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by city bikes, sport cars, wheel chairs and everything that can use roads with 'bad' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=intermediate"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Lane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Two-way streets where there are cycle lanes on both sides of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=lane"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dlane"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#LiftGate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A lift gate (boom barrier) is a bar, or pole pivoted in such a way as to allow the boom to block vehicular access through a controlled point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=lift_gate"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#LivingStreet",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -145,9 +1195,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "highway=living_street"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q1628979"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
@@ -165,9 +1212,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "highway=motorway"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q46622"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
@@ -188,6 +1232,40 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Mud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Like the ground surface, but usually wet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=mud"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#NoAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "No access for the general public."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=no"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Node",
@@ -215,6 +1293,91 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Node"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#OfficialAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A way legally dedicated to specific modes of travel by a law or by the rules of traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=official"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag:access%3Dofficial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#OnewayValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicate the access restriction on highways and other linear features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OnewayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Opposite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cyclists are permitted to travel in both directions on a road which is one-way for normal traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=opposite"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#OppositeLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A one-way street that has a cycling lane going in the opposite direction to normal traffic flow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=opposite_lane"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_lane"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#OppositeTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A cycle track travelling in the opposite direction to other traffic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=opposite_track"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_track"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Path",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -230,6 +1393,74 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Paved",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A non-specific paved surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=paved"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#PavingStones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relatively smooth surface paved with stones."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=paving_stones"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Pebblestone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Loosely arranged smooth stones."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=pebblestone"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Permissive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Open to general traffic until such time as the owner revokes the permission."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=permissive"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Primary",
@@ -264,6 +1495,40 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Private",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Only with individual permission."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=private"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Proposed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For roads that are about to be built, but where any construction work hasn't yet been started."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=proposed"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dproposed"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Relation",
@@ -303,6 +1568,57 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Road",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This tag is used for a road with an unknown classification."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=road"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Droad"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SallyPort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sally port is used to pass through thick or city walls, and is a type of covered gate with two doors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=sally_port"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Sand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Small to very small fractions of rock."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=sand"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Secondary",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -337,6 +1653,9 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SegregatedValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -352,6 +1671,176 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Sett",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sett paving, formed from natural stones cut to a regular shape. The stones do not cover the surface completely, unlike paving_stones."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=sett"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#ShareBusway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A cycle lane taking the form of a bus lane that is also designated for use by cyclists."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=share_busway"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dshare_busway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Shared",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In general, this indicates that cyclists share space with other traffic on this highway."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=shared"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:cycleway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SharedLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CyclewayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Roads which contain a shared lane marking, or sharrow, to indicate that the travel lane is shared by bicycles and other vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=shared_lane"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Proposed_features/shared_lane"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Sidewalk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#FootwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sidewalk that's distinct from the carriageway."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "footway=sidewalk"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Afootway%3Dsidewalk"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SmoothnessValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides a classification scheme regarding the physical usability of a way."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SmoothnessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Steps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Flights of steps on footways and paths."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=steps"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dsteps"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Stop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Points at which vehicles are required to stop."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=stop"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dstop"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SurfaceValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SurfaceValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#SwingGate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Similar to a lift gate but rotates sidewards to open."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=swing_gate"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Tertiary",
@@ -388,11 +1877,28 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#TollBooth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A road usage toll or fee is collected here."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=toll_booth"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Track",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Roads for mostly agricultural or forestry uses."
+    "@value" : "Roads for mostly agricultural or forestry uses. If used in the context of a cycleway this means a cycle track running parallel to a road."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -403,6 +1909,40 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#TracktypeValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TracktypeValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#TrafficSignals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Signalling devices positioned at road intersections, pedestrian crossings and other locations to control competing flows of traffic. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "highway=traffic_signals"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dtraffic_signals"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Trunk",
@@ -417,9 +1957,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "highway=trunk"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q1302778"
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
@@ -442,6 +1979,23 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Turnstile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#BarrierValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A turnstile (also called baffle gate) is used to allow one person at a time to pass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=turnstile"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Unclassified",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -457,6 +2011,142 @@
   } ],
   "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Uncontrolled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CrossingValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A generic crossing with no traffic-signals of any type, just road markings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crossing=uncontrolled"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:crossing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#UnderConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#ConstructionValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that this element is under construction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "construction=yes"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Tag%3Aconstruction%3Dyes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#UnhewnCobblestone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cobblestone paving, formed from natural, uncut, overall rounded stones. Firmly attached to a ground, unlike pebblestone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=unhewn_cobblestone"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Unmarked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#CrossingValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A crossing without road markings or traffic lights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crossing=unmarked"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:crossing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Unpaved",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A loose covering ranging from compacted stone chippings to earth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=unpaved"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#UseSidepath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#AccessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Can only be used in countries with compulsory cycleways and gives access information on parallel roads."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=use_sidepath"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#VeryBadSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by cars with high clearance, light-duty off-road vehicles and everything that can use roads with 'horrible' smoothness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=very_bad"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SmoothnessValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Usable by tractors, ATVs and tanks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=very_horrible"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:smoothness"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#Way",
@@ -476,6 +2166,184 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Way"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#Wood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#SurfaceValue" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wood."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=wood"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#access",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to describe the legal access for highways and other transportation networks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:access"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#barrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A barrier is a physical structure which blocks or impedes movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "barrier=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#BarrierValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:barrier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#bicycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal restrictions for bicycles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bicycle=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:bicycle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#construction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to describe a feature which is currently under construction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "construction=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#ConstructionValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:construction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#crossing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This tag is used for more accurately describing specific types of pedestrian crossings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crossing=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#CrossingValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:crossing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#cycleway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Maps cycling infrastructure that is an inherent part of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cycleway=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#CyclewayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:cycleway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#footway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refines the osm:Footway for sidewalks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "footway=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#FootwayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:footway"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#hasNodes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -490,7 +2358,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "nodes"
+    "@value" : "hasNodes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#list"
@@ -523,7 +2391,7 @@
     "@value" : "This the main property used to identify any kind of road, street or path."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -534,6 +2402,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#HighwayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
   "@id" : "https://w3id.org/openstreetmap/terms#maxspeed",
@@ -562,6 +2433,52 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:maxspeed"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#motor_vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal access restriction for all motor vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "motor_vehicle=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:motor_vehicle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#motorcar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal access permission for cars."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "motorcar=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:motorcar"
+  } ]
+}, {
   "@id" : "https://w3id.org/openstreetmap/terms#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -588,18 +2505,167 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:name"
   } ]
 }, {
+  "@id" : "https://w3id.org/openstreetmap/terms#oneway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicate the access restriction on highways and other linear features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "oneway=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#OnewayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#oneway_bicycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the oneway rules for cyclists."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "oneway:bicycle=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#OnewayValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway:bicycle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#segregated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used for combined cycle- and footways."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "segregated=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#SegregatedValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:segregated"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#smoothness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides a classification scheme regarding the physical usability of a way."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smoothness=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#SmoothnessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "hhttps://wiki.openstreetmap.org/wiki/Key:smoothness"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#surface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surface=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#SurfaceValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:surface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#tracktype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tracktype=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#TracktypeValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:tracktype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/openstreetmap/terms#vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal access restriction for all types of land-based vehicles not operated upon rails."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#Way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "vehicle=*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/openstreetmap/terms#AccessValue"
+  } ],
+  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
+    "@id" : "https://wiki.openstreetmap.org/wiki/Key:vehicle"
+  } ]
+}, {
   "@id" : "https://www.w3.org/2003/01/geo/wgs84_pos#Point",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q1302778",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q1628979",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q3352369",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://www.wikidata.org/wiki/Q46622",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 } ]

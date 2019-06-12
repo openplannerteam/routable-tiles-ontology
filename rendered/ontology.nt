@@ -38,6 +38,101 @@
 # #################################################################
 # 
 # 
+# https://w3id.org/openstreetmap/terms#access
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Element> .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to describe the legal access for highways and other transportation networks."@en .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/2000/01/rdf-schema#label> "access=*"@en .
+<https://w3id.org/openstreetmap/terms#access> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#barrier
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/2000/01/rdf-schema#comment> "A barrier is a physical structure which blocks or impedes movement."@en .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=*"@en .
+<https://w3id.org/openstreetmap/terms#barrier> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#bicycle
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal restrictions for bicycles."@en .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "bicycle=*"@en .
+<https://w3id.org/openstreetmap/terms#bicycle> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:bicycle> .
+# 
+# https://w3id.org/openstreetmap/terms#construction
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#ConstructionValue> .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to describe a feature which is currently under construction."@en .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/2000/01/rdf-schema#label> "construction=*"@en .
+<https://w3id.org/openstreetmap/terms#construction> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:construction> .
+# 
+# https://w3id.org/openstreetmap/terms#crossing
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#CrossingValue> .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/2000/01/rdf-schema#comment> "This tag is used for more accurately describing specific types of pedestrian crossings."@en .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/2000/01/rdf-schema#label> "crossing=*"@en .
+<https://w3id.org/openstreetmap/terms#crossing> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+# 
+# https://w3id.org/openstreetmap/terms#cycleway
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/2000/01/rdf-schema#comment> "Maps cycling infrastructure that is an inherent part of the road."@en .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=*"@en .
+<https://w3id.org/openstreetmap/terms#cycleway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:cycleway> .
+# 
+# https://w3id.org/openstreetmap/terms#footway
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#FootwayValue> .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/2000/01/rdf-schema#comment> "Refines the osm:Footway for sidewalks."@en .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/2000/01/rdf-schema#label> "footway=*"@en .
+<https://w3id.org/openstreetmap/terms#footway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:footway> .
+# 
 # https://w3id.org/openstreetmap/terms#hasNodes
 <https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
@@ -45,15 +140,114 @@
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered collection of nodes that describe the way. \n                              These may be fragmented over multiple predicates due to tiling for example.\n                              Each fragment should have enough overlap to reconstruct the original way."@en .
 <https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
-<https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/2000/01/rdf-schema#label> "nodes"@en .
+<https://w3id.org/openstreetmap/terms#hasNodes> <http://www.w3.org/2000/01/rdf-schema#label> "hasNodes"@en .
 # 
 # https://w3id.org/openstreetmap/terms#highway
 <https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#HighwayValue> .
 <https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#comment> "This the main property used to identify any kind of road, street or path."@en .
 <https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=*"@en .
+<https://w3id.org/openstreetmap/terms#highway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# 
+# https://w3id.org/openstreetmap/terms#motor_vehicle
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal access restriction for all motor vehicles."@en .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "motor_vehicle=*"@en .
+<https://w3id.org/openstreetmap/terms#motor_vehicle> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:motor_vehicle> .
+# 
+# https://w3id.org/openstreetmap/terms#motorcar
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal access permission for cars."@en .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/2000/01/rdf-schema#label> "motorcar=*"@en .
+<https://w3id.org/openstreetmap/terms#motorcar> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:motorcar> .
+# 
+# https://w3id.org/openstreetmap/terms#oneway
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#OnewayValue> .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate the access restriction on highways and other linear features."@en .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/2000/01/rdf-schema#label> "oneway=*"@en .
+<https://w3id.org/openstreetmap/terms#oneway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+# 
+# https://w3id.org/openstreetmap/terms#oneway_bicycle
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#OnewayValue> .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the oneway rules for cyclists."@en .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "oneway:bicycle=*"@en .
+<https://w3id.org/openstreetmap/terms#oneway_bicycle> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway:bicycle> .
+# 
+# https://w3id.org/openstreetmap/terms#segregated
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#SegregatedValue> .
+<https://w3id.org/openstreetmap/terms#SegregatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for combined cycle- and footways."@en .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/2000/01/rdf-schema#label> "segregated=*"@en .
+<https://w3id.org/openstreetmap/terms#segregated> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:segregated> .
+# 
+# https://w3id.org/openstreetmap/terms#smoothness
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a classification scheme regarding the physical usability of a way."@en .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=*"@en .
+<https://w3id.org/openstreetmap/terms#smoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <hhttps://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#surface
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."@en .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/2000/01/rdf-schema#label> "surface=*"@en .
+<https://w3id.org/openstreetmap/terms#surface> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#tracktype
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures how well-maintained a track is, particularly regarding surface firmness."@en .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=*"@en .
+<https://w3id.org/openstreetmap/terms#tracktype> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#vehicle
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/openstreetmap/terms#Way> .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal access restriction for all types of land-based vehicles not operated upon rails."@en .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle=*"@en .
+<https://w3id.org/openstreetmap/terms#vehicle> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:vehicle> .
 # 
 # 
 # 
@@ -112,24 +306,66 @@
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://w3id.org/openstreetmap/terms#AccessValue
+<https://w3id.org/openstreetmap/terms#AccessValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#AccessValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to describe the legal access for highways and other transportation networks."@en .
+<https://w3id.org/openstreetmap/terms#AccessValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#AccessValue> <http://www.w3.org/2000/01/rdf-schema#label> "AccessValue"@en .
+<https://w3id.org/openstreetmap/terms#AccessValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#BarrierValue
+<https://w3id.org/openstreetmap/terms#BarrierValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#BarrierValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A barrier is a physical structure which blocks or impedes movement."@en .
+<https://w3id.org/openstreetmap/terms#BarrierValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#BarrierValue> <http://www.w3.org/2000/01/rdf-schema#label> "BarrierValue"@en .
+<https://w3id.org/openstreetmap/terms#BarrierValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#ConstructionValue
+<https://w3id.org/openstreetmap/terms#ConstructionValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#ConstructionValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to describe a feature which is currently under construction."@en .
+<https://w3id.org/openstreetmap/terms#ConstructionValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#ConstructionValue> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionValue"@en .
+<https://w3id.org/openstreetmap/terms#ConstructionValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:construction> .
+# 
+# https://w3id.org/openstreetmap/terms#CrossingValue
+<https://w3id.org/openstreetmap/terms#CrossingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#CrossingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This tag is used for more accurately describing specific types of pedestrian crossings."@en .
+<https://w3id.org/openstreetmap/terms#CrossingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#CrossingValue> <http://www.w3.org/2000/01/rdf-schema#label> "CrossingValue"@en .
+<https://w3id.org/openstreetmap/terms#CrossingValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+# 
+# https://w3id.org/openstreetmap/terms#CyclewayValue
+<https://w3id.org/openstreetmap/terms#CyclewayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#CyclewayValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Maps cycling infrastructure that is an inherent part of the road."@en .
+<https://w3id.org/openstreetmap/terms#CyclewayValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#CyclewayValue> <http://www.w3.org/2000/01/rdf-schema#label> "CyclewayValue"@en .
+<https://w3id.org/openstreetmap/terms#CyclewayValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:cycleway> .
+# 
 # https://w3id.org/openstreetmap/terms#Element
 <https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Relation> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Node> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Relation> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/openstreetmap/terms#Way> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Elements are the basic components of OpenStreetMap's conceptual data model of the physical world."@en .
 <https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element"@en .
 <https://w3id.org/openstreetmap/terms#Element> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Elements> .
+# 
+# https://w3id.org/openstreetmap/terms#FootwayValue
+<https://w3id.org/openstreetmap/terms#FootwayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#FootwayValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Refines the osm:Footway for sidewalks."@en .
+<https://w3id.org/openstreetmap/terms#FootwayValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#FootwayValue> <http://www.w3.org/2000/01/rdf-schema#label> "FootwayValue"@en .
+<https://w3id.org/openstreetmap/terms#FootwayValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:footway> .
 # 
 # https://w3id.org/openstreetmap/terms#HighwayValue
 <https://w3id.org/openstreetmap/terms#HighwayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -149,6 +385,13 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node"@en .
 <https://w3id.org/openstreetmap/terms#Node> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Node> .
 # 
+# https://w3id.org/openstreetmap/terms#OnewayValue
+<https://w3id.org/openstreetmap/terms#OnewayValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#OnewayValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate the access restriction on highways and other linear features."@en .
+<https://w3id.org/openstreetmap/terms#OnewayValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#OnewayValue> <http://www.w3.org/2000/01/rdf-schema#label> "OnewayValue"@en .
+<https://w3id.org/openstreetmap/terms#OnewayValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+# 
 # https://w3id.org/openstreetmap/terms#Relation
 <https://w3id.org/openstreetmap/terms#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/openstreetmap/terms#Relation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/openstreetmap/terms#Way> .
@@ -156,6 +399,29 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"@en .
 <https://w3id.org/openstreetmap/terms#Relation> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Relation> .
+# 
+# https://w3id.org/openstreetmap/terms#SegregatedValue
+# 
+# https://w3id.org/openstreetmap/terms#SmoothnessValue
+<https://w3id.org/openstreetmap/terms#SmoothnessValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#SmoothnessValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a classification scheme regarding the physical usability of a way."@en .
+<https://w3id.org/openstreetmap/terms#SmoothnessValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#SmoothnessValue> <http://www.w3.org/2000/01/rdf-schema#label> "SmoothnessValue"@en .
+<https://w3id.org/openstreetmap/terms#SmoothnessValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#SurfaceValue
+<https://w3id.org/openstreetmap/terms#SurfaceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#SurfaceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."@en .
+<https://w3id.org/openstreetmap/terms#SurfaceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#SurfaceValue> <http://www.w3.org/2000/01/rdf-schema#label> "SurfaceValue"@en .
+<https://w3id.org/openstreetmap/terms#SurfaceValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#TracktypeValue
+<https://w3id.org/openstreetmap/terms#TracktypeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/openstreetmap/terms#TracktypeValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures how well-maintained a track is, particularly regarding surface firmness."@en .
+<https://w3id.org/openstreetmap/terms#TracktypeValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#TracktypeValue> <http://www.w3.org/2000/01/rdf-schema#label> "TracktypeValue"@en .
+<https://w3id.org/openstreetmap/terms#TracktypeValue> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
 # 
 # https://w3id.org/openstreetmap/terms#Way
 <https://w3id.org/openstreetmap/terms#Way> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -175,6 +441,43 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # #################################################################
 # 
 # 
+# http://www.wikidata.org/entity/Q12511
+<http://www.wikidata.org/entity/Q12511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q12511> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#Steps> .
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q1302778
+<http://www.wikidata.org/entity/Q1302778> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q1302778> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#Trunk> .
+<https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q1628979
+<http://www.wikidata.org/entity/Q1628979> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q1628979> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#CycleHighway> .
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q1628979> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#LivingStreet> .
+<https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q189259
+<http://www.wikidata.org/entity/Q189259> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q189259> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#Asphalt> .
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q3352369
+<http://www.wikidata.org/entity/Q3352369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q3352369> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#FootHighway> .
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q46622
+<http://www.wikidata.org/entity/Q46622> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q46622> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#Motorway> .
+<https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.wikidata.org/entity/Q8010
+<http://www.wikidata.org/entity/Q8010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wikidata.org/entity/Q8010> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/openstreetmap/terms#HighwayCrossing> .
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # https://biblio.ugent.be/person/802002413821
 <https://biblio.ugent.be/person/802002413821> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://biblio.ugent.be/person/802002413821> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
@@ -186,31 +489,418 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
 <https://w3id.org/openstreetmap/terms> <http://xmlns.com/foaf/0.1/primaryTopic> <https://w3id.org/openstreetmap/terms#> .
 # 
-# https://w3id.org/openstreetmap/terms#Footway
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q3352369> .
-<https://www.wikidata.org/wiki/Q3352369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/2000/01/rdf-schema#comment> "Designated footpaths; i.e., mainly/exclusively for pedestrians."@en .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=footway"@en .
-<https://w3id.org/openstreetmap/terms#Footway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# https://w3id.org/openstreetmap/terms#Agricultural
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/2000/01/rdf-schema#comment> "Only for agricultural traffic."@en .
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/2000/01/rdf-schema#label> "access=agricultural"@en .
+<https://w3id.org/openstreetmap/terms#Agricultural> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Asphalt
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/2000/01/rdf-schema#comment> "This road has an asphalt surface."@en .
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/2000/01/rdf-schema#label> "surface=asphalt"@en .
+<https://w3id.org/openstreetmap/terms#Asphalt> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dasphalt> .
+# 
+# https://w3id.org/openstreetmap/terms#BadSmoothness
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by trekking bikes, normal cars and everything that can use roads with 'very bad' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=bad"@en .
+<https://w3id.org/openstreetmap/terms#BadSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#Bidirectional
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#OnewayValue> .
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/2000/01/rdf-schema#comment> "This is not a oneway street."@en .
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/2000/01/rdf-schema#label> "oneway=no"@en .
+<https://w3id.org/openstreetmap/terms#Bidirectional> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+# 
+# https://w3id.org/openstreetmap/terms#Block
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/2000/01/rdf-schema#comment> "A large, solid, immobile block that can be moved only with heavy machinery or great effort."@en .
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=block"@en .
+<https://w3id.org/openstreetmap/terms#Block> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#Bollard
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid (usually concrete or metal) pillar or pillars in the middle of the road to prevent passage by some traffic."@en .
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=bollard"@en .
+<https://w3id.org/openstreetmap/terms#Bollard> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:bollard> .
+# 
+# https://w3id.org/openstreetmap/terms#BorderControl
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a control point at an international border between two countries. Passports or other forms of ID will be checked."@en .
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=border_control"@en .
+<https://w3id.org/openstreetmap/terms#BorderControl> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:border_control> .
+# 
+# https://w3id.org/openstreetmap/terms#Bridleway
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/2000/01/rdf-schema#comment> "A way intended for use by horse riders."@en .
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=bridleway"@en .
+<https://w3id.org/openstreetmap/terms#Bridleway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dbridleway> .
+# 
+# https://w3id.org/openstreetmap/terms#BumpGate
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/2000/01/rdf-schema#comment> "A bump gate is a drive-through gate used in rural areas to provide a barrier to livestock that does not require the driver to exit the vehicle."@en .
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=bump_gate"@en .
+<https://w3id.org/openstreetmap/terms#BumpGate> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://en.wikipedia.org/wiki/Bump_gate> .
+# 
+# https://w3id.org/openstreetmap/terms#BusTrap
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/2000/01/rdf-schema#comment> "A bus trap is a metal grate placed over a ditch or pit in the road with tines (sides) spaced far enough apart that small-diameter-wheeled (narrower axle) vehicles fall in between the tines but close enough that larger-diameter-wheeled vehicles, such as buses, may pass."@en .
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=bus_trap"@en .
+<https://w3id.org/openstreetmap/terms#BusTrap> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://en.wikipedia.org/wiki/Bus_trap> .
+# 
+# https://w3id.org/openstreetmap/terms#CattleGrid
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Bars in the road surface that allow wheeled vehicles but not animals to cross."@en .
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=cattle_grid"@en .
+<https://w3id.org/openstreetmap/terms#CattleGrid> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#Chain
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/2000/01/rdf-schema#comment> "A chain used to prevent motorised vehicles."@en .
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=chain"@en .
+<https://w3id.org/openstreetmap/terms#Chain> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#Cobblestone
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/2000/01/rdf-schema#comment> "This road has an cobblestone surface."@en .
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/2000/01/rdf-schema#label> "surface=cobblestone"@en .
+<https://w3id.org/openstreetmap/terms#Cobblestone> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Compacted
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/2000/01/rdf-schema#comment> "A mixture of larger (e.g., gravel) and smaller (e.g., sand) parts, compacted so the surface is more stable than loose gravel."@en .
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/2000/01/rdf-schema#label> "surface=compacted"@en .
+<https://w3id.org/openstreetmap/terms#Compacted> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dcompacted> .
+# 
+# https://w3id.org/openstreetmap/terms#Concrete
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Cement based concrete."@en .
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/2000/01/rdf-schema#label> "surface=concrete"@en .
+<https://w3id.org/openstreetmap/terms#Concrete> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Customers
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/2000/01/rdf-schema#comment> "Only for customers of the element."@en .
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/2000/01/rdf-schema#label> "access=customers"@en .
+<https://w3id.org/openstreetmap/terms#Customers> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#CycleBarrier
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Barriers to bicycle traffic, most typically a pair of staggered steel bars perpendicular to the way itself whose gaps allow pedestrians to pass."@en .
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=cycle_barrier"@en .
+<https://w3id.org/openstreetmap/terms#CycleBarrier> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#CycleHighway
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/2000/01/rdf-schema#comment> "For designated cycleways."@en .
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=cycleway"@en .
+<https://w3id.org/openstreetmap/terms#CycleHighway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# 
+# https://w3id.org/openstreetmap/terms#Debris
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/2000/01/rdf-schema#comment> "A road is blocked by debris with or without ground. This might be for short or long time. Often used as first step in blocking an abandoned road."@en .
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=debris"@en .
+<https://w3id.org/openstreetmap/terms#Debris> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#Delivery
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/2000/01/rdf-schema#comment> "Only when delivering to the element."@en .
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/2000/01/rdf-schema#label> "access=customers"@en .
+<https://w3id.org/openstreetmap/terms#Delivery> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Designated
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/2000/01/rdf-schema#comment> "A preferred or designated route."@en .
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/2000/01/rdf-schema#label> "access=designated"@en .
+<https://w3id.org/openstreetmap/terms#Designated> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Destination
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Only when travelling to this element/area; i.e., local traffic only."@en .
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "access=destination"@en .
+<https://w3id.org/openstreetmap/terms#Destination> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Dirt
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/2000/01/rdf-schema#comment> "This road's surface is just dirt (earth)."@en .
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/2000/01/rdf-schema#label> "surface=dirt"@en .
+<https://w3id.org/openstreetmap/terms#Dirt> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Discouraged
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal right of way exists but usage is officially discouraged."@en .
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/2000/01/rdf-schema#label> "access=discouraged"@en .
+<https://w3id.org/openstreetmap/terms#Discouraged> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Dismount
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/2000/01/rdf-schema#comment> "Permitted for some vehicle (or animal) only if you dismount."@en .
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/2000/01/rdf-schema#label> "access=dismount"@en .
+<https://w3id.org/openstreetmap/terms#Dismount> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Emergency
+<https://w3id.org/openstreetmap/terms#Emergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Emergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Emergency> <http://www.w3.org/2000/01/rdf-schema#comment> "Only for emergency vehicles."@en .
+<https://w3id.org/openstreetmap/terms#Emergency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Emergency> <http://www.w3.org/2000/01/rdf-schema#label> "access=emergency"@en .
+# 
+# https://w3id.org/openstreetmap/terms#Entrance
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/2000/01/rdf-schema#comment> "A gap in a linear barrier with nothing that limits passing through."@en .
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=entrance"@en .
+<https://w3id.org/openstreetmap/terms#Entrance> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#ExcellentSmoothness
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by roller blades, skate boards and everything that can use roads with 'good' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=excellent"@en .
+<https://w3id.org/openstreetmap/terms#ExcellentSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#FineGravel
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/2000/01/rdf-schema#comment> "A multilayer pavement with a stone or gravel basis and a topmost surface of firm, granular gravel."@en .
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/2000/01/rdf-schema#label> "surface=fine_gravel"@en .
+<https://w3id.org/openstreetmap/terms#FineGravel> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#FootHighway
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/2000/01/rdf-schema#comment> "Designated footpaths; i.e., mainly/exclusively for pedestrians."@en .
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=footway"@en .
+<https://w3id.org/openstreetmap/terms#FootHighway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# 
+# https://w3id.org/openstreetmap/terms#Forestry
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/2000/01/rdf-schema#comment> "Only for forestry traffic."@en .
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/2000/01/rdf-schema#label> "access=forestry"@en .
+<https://w3id.org/openstreetmap/terms#Forestry> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#FreeAccess
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "The public has an official, legally-enshrined right of access; i.e., it's a right of way."@en .
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/2000/01/rdf-schema#label> "access=yes"@en .
+<https://w3id.org/openstreetmap/terms#FreeAccess> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Gate
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/2000/01/rdf-schema#comment> "An entrance that can be opened or closed to get through the barrier."@en .
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=gate"@en .
+<https://w3id.org/openstreetmap/terms#Gate> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#GiveWay
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/2000/01/rdf-schema#comment> "Points where a traffic sign instructs traffic to cede priority."@en .
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/2000/01/rdf-schema#label> "highway=give_way"@en .
+<https://w3id.org/openstreetmap/terms#GiveWay> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dgive_way> .
+# 
+# https://w3id.org/openstreetmap/terms#GoodSmoothness
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by racing bikes and everything that can use roads with 'intermediate' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=good"@en .
+<https://w3id.org/openstreetmap/terms#GoodSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#Grade1
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid. Usually a paved or sealed surface."@en .
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=grade1"@en .
+<https://w3id.org/openstreetmap/terms#Grade1> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#Grade2
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid. Usually an unpaved track with surface of gravel."@en .
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=grade2"@en .
+<https://w3id.org/openstreetmap/terms#Grade2> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#Grade3
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/2000/01/rdf-schema#comment> "Mostly solid. Even mixture of hard and soft materials."@en .
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=grade3"@en .
+<https://w3id.org/openstreetmap/terms#Grade3> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#Grade4
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/2000/01/rdf-schema#comment> "Mostly soft. Almost always an unpaved track prominently with soil/sand/grass, but with some hard or compacted materials mixed in."@en .
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=grade4"@en .
+<https://w3id.org/openstreetmap/terms#Grade4> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#Grade5
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#TracktypeValue> .
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/2000/01/rdf-schema#comment> "Soft. Almost always an unpaved track lacking additional materials, same surface as surrounding terrain."@en .
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/2000/01/rdf-schema#label> "tracktype=grade5"@en .
+<https://w3id.org/openstreetmap/terms#Grade5> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+# 
+# https://w3id.org/openstreetmap/terms#Grass
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/2000/01/rdf-schema#comment> "Grass covered ground."@en .
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/2000/01/rdf-schema#label> "surface=grass"@en .
+<https://w3id.org/openstreetmap/terms#Grass> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Gravel
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/2000/01/rdf-schema#comment> "Broken/crushed rock with sharp edges."@en .
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/2000/01/rdf-schema#label> "surface=gravel"@en .
+<https://w3id.org/openstreetmap/terms#Gravel> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Ground
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/2000/01/rdf-schema#comment> "No special surface, the ground itself has marks of human or animal usage."@en .
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/2000/01/rdf-schema#label> "surface=ground"@en .
+<https://w3id.org/openstreetmap/terms#Ground> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#HighwayCrossing
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/2000/01/rdf-schema#comment> "Pedestrians can cross a street here."@en .
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/2000/01/rdf-schema#label> "highway=crossing"@en .
+<https://w3id.org/openstreetmap/terms#HighwayCrossing> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dcrossing> .
+# 
+# https://w3id.org/openstreetmap/terms#HorribleSmoothness
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by heavy-duty off-road vehicles and everything that can use roads with 'very horrible' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=horrible"@en .
+<https://w3id.org/openstreetmap/terms#HorribleSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#ImpassableSmoothness
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Not usable by wheeled vehicles."@en .
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=impassable"@en .
+<https://w3id.org/openstreetmap/terms#ImpassableSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#InOrder
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#OnewayValue> .
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a oneway street, with the direction being the same order of the way nodes."@en .
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/2000/01/rdf-schema#label> "oneway=yes"@en .
+<https://w3id.org/openstreetmap/terms#InOrder> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+# 
+# https://w3id.org/openstreetmap/terms#InReverseOrder
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#OnewayValue> .
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a oneway street, with the direction being the reverse of the order of the way nodes."@en .
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/2000/01/rdf-schema#label> "oneway=-1"@en .
+<https://w3id.org/openstreetmap/terms#InReverseOrder> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+# 
+# https://w3id.org/openstreetmap/terms#IntermediateSmoothness
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by city bikes, sport cars, wheel chairs and everything that can use roads with 'bad' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=intermediate"@en .
+<https://w3id.org/openstreetmap/terms#IntermediateSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#Lane
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/2000/01/rdf-schema#comment> "Two-way streets where there are cycle lanes on both sides of the road."@en .
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=lane"@en .
+<https://w3id.org/openstreetmap/terms#Lane> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dlane> .
+# 
+# https://w3id.org/openstreetmap/terms#LiftGate
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/2000/01/rdf-schema#comment> "A lift gate (boom barrier) is a bar, or pole pivoted in such a way as to allow the boom to block vehicular access through a controlled point."@en .
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=lift_gate"@en .
+<https://w3id.org/openstreetmap/terms#LiftGate> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
 # 
 # https://w3id.org/openstreetmap/terms#LivingStreet
-<https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
-<https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q1628979> .
-<https://www.wikidata.org/wiki/Q1628979> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/2000/01/rdf-schema#comment> "For living streets, which are residential streets where pedestrians have legal priority over cars."@en .
 <https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/2000/01/rdf-schema#label> "highway=living_street"@en .
 <https://w3id.org/openstreetmap/terms#LivingStreet> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
 # https://w3id.org/openstreetmap/terms#Motorway
-<https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
-<https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q46622> .
-<https://www.wikidata.org/wiki/Q46622> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/2000/01/rdf-schema#comment> "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."@en .
 <https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Motorway> <http://www.w3.org/2000/01/rdf-schema#label> "highway=motorway"@en .
@@ -224,6 +914,54 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#MotorwayLink> <http://www.w3.org/2000/01/rdf-schema#label> "highway=motorway_link"@en .
 <https://w3id.org/openstreetmap/terms#MotorwayLink> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#Mud
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/2000/01/rdf-schema#comment> "Like the ground surface, but usually wet."@en .
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/2000/01/rdf-schema#label> "surface=mud"@en .
+<https://w3id.org/openstreetmap/terms#Mud> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#NoAccess
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "No access for the general public."@en .
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/2000/01/rdf-schema#label> "access=no"@en .
+<https://w3id.org/openstreetmap/terms#NoAccess> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#OfficialAccess
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "A way legally dedicated to specific modes of travel by a law or by the rules of traffic."@en .
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/2000/01/rdf-schema#label> "access=official"@en .
+<https://w3id.org/openstreetmap/terms#OfficialAccess> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag:access%3Dofficial> .
+# 
+# https://w3id.org/openstreetmap/terms#Opposite
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/2000/01/rdf-schema#comment> "Cyclists are permitted to travel in both directions on a road which is one-way for normal traffic."@en .
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=opposite"@en .
+<https://w3id.org/openstreetmap/terms#Opposite> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite> .
+# 
+# https://w3id.org/openstreetmap/terms#OppositeLane
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/2000/01/rdf-schema#comment> "A one-way street that has a cycling lane going in the opposite direction to normal traffic flow."@en .
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=opposite_lane"@en .
+<https://w3id.org/openstreetmap/terms#OppositeLane> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_lane> .
+# 
+# https://w3id.org/openstreetmap/terms#OppositeTrack
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "A cycle track travelling in the opposite direction to other traffic."@en .
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=opposite_track"@en .
+<https://w3id.org/openstreetmap/terms#OppositeTrack> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_track> .
+# 
 # https://w3id.org/openstreetmap/terms#Path
 <https://w3id.org/openstreetmap/terms#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
@@ -231,6 +969,38 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Path> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Path> <http://www.w3.org/2000/01/rdf-schema#label> "highway=path"@en .
 <https://w3id.org/openstreetmap/terms#Path> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# 
+# https://w3id.org/openstreetmap/terms#Paved
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-specific paved surface."@en .
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/2000/01/rdf-schema#label> "surface=paved"@en .
+<https://w3id.org/openstreetmap/terms#Paved> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#PavingStones
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/2000/01/rdf-schema#comment> "A relatively smooth surface paved with stones."@en .
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/2000/01/rdf-schema#label> "surface=paving_stones"@en .
+<https://w3id.org/openstreetmap/terms#PavingStones> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Pebblestone
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/2000/01/rdf-schema#comment> "Loosely arranged smooth stones."@en .
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/2000/01/rdf-schema#label> "surface=pebblestone"@en .
+<https://w3id.org/openstreetmap/terms#Pebblestone> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#Permissive
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/2000/01/rdf-schema#comment> "Open to general traffic until such time as the owner revokes the permission."@en .
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/2000/01/rdf-schema#label> "access=permissive"@en .
+<https://w3id.org/openstreetmap/terms#Permissive> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
 # 
 # https://w3id.org/openstreetmap/terms#Primary
 <https://w3id.org/openstreetmap/terms#Primary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -248,6 +1018,22 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#PrimaryLink> <http://www.w3.org/2000/01/rdf-schema#label> "highway=primary_link"@en .
 <https://w3id.org/openstreetmap/terms#PrimaryLink> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#Private
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/2000/01/rdf-schema#comment> "Only with individual permission."@en .
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/2000/01/rdf-schema#label> "access=private"@en .
+<https://w3id.org/openstreetmap/terms#Private> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#Proposed
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/2000/01/rdf-schema#comment> "For roads that are about to be built, but where any construction work hasn't yet been started."@en .
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/2000/01/rdf-schema#label> "highway=proposed"@en .
+<https://w3id.org/openstreetmap/terms#Proposed> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dproposed> .
+# 
 # https://w3id.org/openstreetmap/terms#Residential
 <https://w3id.org/openstreetmap/terms#Residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
@@ -255,6 +1041,30 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Residential> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Residential> <http://www.w3.org/2000/01/rdf-schema#label> "highway=residential"@en .
 <https://w3id.org/openstreetmap/terms#Residential> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
+# 
+# https://w3id.org/openstreetmap/terms#Road
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/2000/01/rdf-schema#comment> "This tag is used for a road with an unknown classification."@en .
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/2000/01/rdf-schema#label> "highway=road"@en .
+<https://w3id.org/openstreetmap/terms#Road> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Droad> .
+# 
+# https://w3id.org/openstreetmap/terms#SallyPort
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/2000/01/rdf-schema#comment> "A sally port is used to pass through thick or city walls, and is a type of covered gate with two doors."@en .
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=sally_port"@en .
+<https://w3id.org/openstreetmap/terms#SallyPort> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
+# https://w3id.org/openstreetmap/terms#Sand
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/2000/01/rdf-schema#comment> "Small to very small fractions of rock."@en .
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/2000/01/rdf-schema#label> "surface=sand"@en .
+<https://w3id.org/openstreetmap/terms#Sand> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
 # 
 # https://w3id.org/openstreetmap/terms#Secondary
 <https://w3id.org/openstreetmap/terms#Secondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -280,6 +1090,69 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Service> <http://www.w3.org/2000/01/rdf-schema#label> "highway=service"@en .
 <https://w3id.org/openstreetmap/terms#Service> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#Sett
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/2000/01/rdf-schema#comment> "Sett paving, formed from natural stones cut to a regular shape. The stones do not cover the surface completely, unlike paving_stones."@en .
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/2000/01/rdf-schema#label> "surface=sett"@en .
+<https://w3id.org/openstreetmap/terms#Sett> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#ShareBusway
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/2000/01/rdf-schema#comment> "A cycle lane taking the form of a bus lane that is also designated for use by cyclists."@en .
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=share_busway"@en .
+<https://w3id.org/openstreetmap/terms#ShareBusway> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dshare_busway> .
+# 
+# https://w3id.org/openstreetmap/terms#Shared
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/2000/01/rdf-schema#comment> "In general, this indicates that cyclists share space with other traffic on this highway."@en .
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=shared"@en .
+<https://w3id.org/openstreetmap/terms#Shared> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:cycleway> .
+# 
+# https://w3id.org/openstreetmap/terms#SharedLane
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CyclewayValue> .
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/2000/01/rdf-schema#comment> "Roads which contain a shared lane marking, or sharrow, to indicate that the travel lane is shared by bicycles and other vehicles."@en .
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/2000/01/rdf-schema#label> "cycleway=shared_lane"@en .
+<https://w3id.org/openstreetmap/terms#SharedLane> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Proposed_features/shared_lane> .
+# 
+# https://w3id.org/openstreetmap/terms#Sidewalk
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#FootwayValue> .
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/2000/01/rdf-schema#comment> "A sidewalk that's distinct from the carriageway."@en .
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/2000/01/rdf-schema#label> "footway=sidewalk"@en .
+<https://w3id.org/openstreetmap/terms#Sidewalk> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Afootway%3Dsidewalk> .
+# 
+# https://w3id.org/openstreetmap/terms#Steps
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/2000/01/rdf-schema#comment> "Flights of steps on footways and paths."@en .
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/2000/01/rdf-schema#label> "highway=steps"@en .
+<https://w3id.org/openstreetmap/terms#Steps> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dsteps> .
+# 
+# https://w3id.org/openstreetmap/terms#Stop
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/2000/01/rdf-schema#comment> "Points at which vehicles are required to stop."@en .
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/2000/01/rdf-schema#label> "highway=stop"@en .
+<https://w3id.org/openstreetmap/terms#Stop> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dstop> .
+# 
+# https://w3id.org/openstreetmap/terms#SwingGate
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/2000/01/rdf-schema#comment> "Similar to a lift gate but rotates sidewards to open."@en .
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=swing_gate"@en .
+<https://w3id.org/openstreetmap/terms#SwingGate> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
 # https://w3id.org/openstreetmap/terms#Tertiary
 <https://w3id.org/openstreetmap/terms#Tertiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Tertiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
@@ -296,19 +1169,32 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#TertiaryLink> <http://www.w3.org/2000/01/rdf-schema#label> "highway=tertiary_link"@en .
 <https://w3id.org/openstreetmap/terms#TertiaryLink> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#TollBooth
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/2000/01/rdf-schema#comment> "A road usage toll or fee is collected here."@en .
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=toll_booth"@en .
+<https://w3id.org/openstreetmap/terms#TollBooth> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
 # https://w3id.org/openstreetmap/terms#Track
 <https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
-<https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "Roads for mostly agricultural or forestry uses."@en .
+<https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "Roads for mostly agricultural or forestry uses. If used in the context of a cycleway this means a cycle track running parallel to a road."@en .
 <https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/2000/01/rdf-schema#label> "highway=track"@en .
 <https://w3id.org/openstreetmap/terms#Track> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#TrafficSignals
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/2000/01/rdf-schema#comment> "Signalling devices positioned at road intersections, pedestrian crossings and other locations to control competing flows of traffic. "@en .
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/2000/01/rdf-schema#label> "highway=traffic_signals"@en .
+<https://w3id.org/openstreetmap/terms#TrafficSignals> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dtraffic_signals> .
+# 
 # https://w3id.org/openstreetmap/terms#Trunk
-<https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
-<https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q1302778> .
-<https://www.wikidata.org/wiki/Q1302778> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/2000/01/rdf-schema#comment> "The most important roads in a country's system that aren't motorways."@en .
 <https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
 <https://w3id.org/openstreetmap/terms#Trunk> <http://www.w3.org/2000/01/rdf-schema#label> "highway=trunk"@en .
@@ -322,6 +1208,14 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#TrunkLink> <http://www.w3.org/2000/01/rdf-schema#label> "highway=trunk_link"@en .
 <https://w3id.org/openstreetmap/terms#TrunkLink> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
+# https://w3id.org/openstreetmap/terms#Turnstile
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#BarrierValue> .
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/2000/01/rdf-schema#comment> "A turnstile (also called baffle gate) is used to allow one person at a time to pass."@en .
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/2000/01/rdf-schema#label> "barrier=turnstile"@en .
+<https://w3id.org/openstreetmap/terms#Turnstile> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+# 
 # https://w3id.org/openstreetmap/terms#Unclassified
 <https://w3id.org/openstreetmap/terms#Unclassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/openstreetmap/terms#Unclassified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#HighwayValue> .
@@ -330,12 +1224,76 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/openstreetmap/terms#Unclassified> <http://www.w3.org/2000/01/rdf-schema#label> "highway=unclassified"@en .
 <https://w3id.org/openstreetmap/terms#Unclassified> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:highway> .
 # 
-# https://www.wikidata.org/wiki/Q1302778
+# https://w3id.org/openstreetmap/terms#Uncontrolled
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CrossingValue> .
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic crossing with no traffic-signals of any type, just road markings."@en .
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/2000/01/rdf-schema#label> "crossing=uncontrolled"@en .
+<https://w3id.org/openstreetmap/terms#Uncontrolled> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:crossing> .
 # 
-# https://www.wikidata.org/wiki/Q1628979
+# https://w3id.org/openstreetmap/terms#UnderConstruction
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#ConstructionValue> .
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that this element is under construction."@en .
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "construction=yes"@en .
+<https://w3id.org/openstreetmap/terms#UnderConstruction> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Tag%3Aconstruction%3Dyes> .
 # 
-# https://www.wikidata.org/wiki/Q3352369
+# https://w3id.org/openstreetmap/terms#UnhewnCobblestone
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/2000/01/rdf-schema#comment> "Cobblestone paving, formed from natural, uncut, overall rounded stones. Firmly attached to a ground, unlike pebblestone."@en .
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/2000/01/rdf-schema#label> "surface=unhewn_cobblestone"@en .
+<https://w3id.org/openstreetmap/terms#UnhewnCobblestone> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
 # 
-# https://www.wikidata.org/wiki/Q46622
+# https://w3id.org/openstreetmap/terms#Unmarked
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#CrossingValue> .
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/2000/01/rdf-schema#comment> "A crossing without road markings or traffic lights"@en .
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/2000/01/rdf-schema#label> "crossing=unmarked"@en .
+<https://w3id.org/openstreetmap/terms#Unmarked> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+# 
+# https://w3id.org/openstreetmap/terms#Unpaved
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/2000/01/rdf-schema#comment> "A loose covering ranging from compacted stone chippings to earth."@en .
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/2000/01/rdf-schema#label> "surface=unpaved"@en .
+<https://w3id.org/openstreetmap/terms#Unpaved> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
+# 
+# https://w3id.org/openstreetmap/terms#UseSidepath
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#AccessValue> .
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/2000/01/rdf-schema#comment> "Can only be used in countries with compulsory cycleways and gives access information on parallel roads."@en .
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/2000/01/rdf-schema#label> "access=use_sidepath"@en .
+<https://w3id.org/openstreetmap/terms#UseSidepath> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:access> .
+# 
+# https://w3id.org/openstreetmap/terms#VeryBadSmoothness
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by cars with high clearance, light-duty off-road vehicles and everything that can use roads with 'horrible' smoothness."@en .
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=very_bad"@en .
+<https://w3id.org/openstreetmap/terms#VeryBadSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SmoothnessValue> .
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#comment> "Usable by tractors, ATVs and tanks."@en .
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/2000/01/rdf-schema#label> "smoothness=very_horrible"@en .
+<https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+# 
+# https://w3id.org/openstreetmap/terms#Wood
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/openstreetmap/terms#SurfaceValue> .
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood."@en .
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/openstreetmap/terms#> .
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/2000/01/rdf-schema#label> "surface=wood"@en .
+<https://w3id.org/openstreetmap/terms#Wood> <http://www.w3.org/ns/prov#wasInfluencedBy> <https://wiki.openstreetmap.org/wiki/Key:surface> .
 # 
 # Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
