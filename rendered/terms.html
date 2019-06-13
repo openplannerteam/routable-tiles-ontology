@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/openstreetmap/terms#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/openstreetmap/terms#","name":"https://w3id.org/openstreetmap/terms#", "headline":"This ontology describes the OpenStreetMap data model.", "datePublished":"Fri May 03 11:32:01 CEST 2019", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"https://biblio.ugent.be/person/802002413821","url":"https://biblio.ugent.be/person/802002413821"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/openstreetmap/terms#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/openstreetmap/terms#","name":"https://w3id.org/openstreetmap/terms#", "headline":"This ontology describes the OpenStreetMap data model.", "datePublished":"2019-06-13", "version":"0.2", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Harm Delva","url":"https://biblio.ugent.be/person/802002413821"},{"@type":"Person","name":"Pieter Colpaert","url":"https://pietercolpaert.be/#me"}], "contributor":[{"@type":"Person","name":"Ben Abelshausen"},{"@type":"Person","name":"Julian Rojas","url":"https://biblio.ugent.be/person/802002620753"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -45,6 +45,7 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
+      $("#abstract").load("sections/abstract-en.html"); 
       $("#overview").load("sections/overview-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
@@ -55,12 +56,20 @@ function loadTOC(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h2>Release  2019-06-13</h2>
 
 
 <dl>
+<dt>Revision:</dt>
+<dd>0.2</dd>
 <dt>Authors:</dt>
-<dd><a href="https://biblio.ugent.be/person/802002413821">https://biblio.ugent.be/person/802002413821</a></dd>
+<dd><a href="https://biblio.ugent.be/person/802002413821">Harm Delva</a>, (<a href="http://idlab.technology/">Ghent University – imec – IDLab</a>)</dd><dd><a href="https://pietercolpaert.be/#me">Pieter Colpaert</a>, (<a href="http://idlab.technology/">Ghent University – imec – IDLab</a>)</dd>
 
+<dt>Contributors:</dt>
+<dd>Ben Abelshausen, Open Knowledge Belgium</dd><dd><a href="https://biblio.ugent.be/person/802002620753">Julian Rojas</a>, (<a href="http://idlab.technology/">Ghent University – imec – IDLab</a>)</dd>
+
+<dt>Publisher:</dt>
+<dd>Open Planner Team</dd>
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 </dl>
@@ -71,7 +80,8 @@ function loadTOC(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div><div id="toc"></div>     <div id="overview"></div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="overview"></div>
      <div id="crossref"></div>
 <html>
 <div id="acknowledgements">
