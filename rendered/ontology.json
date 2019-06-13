@@ -164,10 +164,20 @@
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://biblio.ugent.be/person/802002413821"
+  }, {
+    "@id" : "https://pietercolpaert.be/#me"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "This ontology describes the OpenStreetMap data model."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-06-13"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-06-13"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "osm"
@@ -184,7 +194,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used to describe the legal access for highways and other transportation networks."
+    "@value" : "The legal access for highways and other transportation networks."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -252,7 +262,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A barrier is a physical structure which blocks or impedes movement."
+    "@value" : "A physical structure which blocks or impedes movement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -473,7 +483,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used to describe a feature which is currently under construction."
+    "@value" : "A feature which is currently under construction."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -490,7 +500,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This tag is used for more accurately describing specific types of pedestrian crossings."
+    "@value" : "A specific type of pedestrian crossing."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -558,7 +568,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Maps cycling infrastructure that is an inherent part of the road."
+    "@value" : "Cycling infrastructure that is an inherent part of the road."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -796,7 +806,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Refines the osm:Footway for sidewalks."
+    "@value" : "A specific kind of footway."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -1051,7 +1061,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates the role and importance of the way within the road network."
+    "@value" : "The kind of road, street or path."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -1314,7 +1324,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicate the access restriction on highways and other linear features."
+    "@value" : "Direction restrictions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -1653,9 +1663,6 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:highway"
   } ]
 }, {
-  "@id" : "https://w3id.org/openstreetmap/terms#SegregatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/openstreetmap/terms#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/openstreetmap/terms#HighwayValue" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1762,7 +1769,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Provides a classification scheme regarding the physical usability of a way."
+    "@value" : "A classification scheme regarding the physical usability of a way."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -1813,7 +1820,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+    "@value" : "The physical surface of elements, particularly regarding material composition and/or structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -1915,7 +1922,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+    "@value" : "How well-maintained a track is, particularly regarding surface firmness."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#"
@@ -2187,7 +2194,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used to describe the legal access for highways and other transportation networks."
+    "@value" : "The legal access for highways and other transportation networks."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Element"
@@ -2210,7 +2217,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A barrier is a physical structure which blocks or impedes movement."
+    "@value" : "A physical structure which blocks or impedes movement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
@@ -2233,7 +2240,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Legal restrictions for bicycles."
+    "@value" : "The legal restrictions for bicycles."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid4"
@@ -2256,7 +2263,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used to describe a feature which is currently under construction."
+    "@value" : "A feature which is currently under construction."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
@@ -2279,7 +2286,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This tag is used for more accurately describing specific types of pedestrian crossings."
+    "@value" : "A specific type of pedestrian crossing."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid10"
@@ -2302,7 +2309,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Maps cycling infrastructure that is an inherent part of the road."
+    "@value" : "Cycling infrastructure that is an inherent part of the road."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2325,7 +2332,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Refines the osm:Footway for sidewalks."
+    "@value" : "A specific kind of footway."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2388,7 +2395,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This the main property used to identify any kind of road, street or path."
+    "@value" : "The kind of road, street or path."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid13"
@@ -2414,7 +2421,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used to define the maximum legal speed limit, in km/h."
+    "@value" : "The maximum legal speed limit, in km/h."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2437,7 +2444,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Legal access restriction for all motor vehicles."
+    "@value" : "The legal access restriction for all motor vehicles."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2460,7 +2467,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Legal access permission for cars."
+    "@value" : "The legal access permission for cars."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2483,7 +2490,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Used for naming an element."
+    "@value" : "The default name of an element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Element"
@@ -2509,7 +2516,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicate the access restriction on highways and other linear features."
+    "@value" : "The direction restrictions on highways."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2532,7 +2539,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Defines the oneway rules for cyclists."
+    "@value" : "The direction restrictions for cyclists specifically."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2551,34 +2558,11 @@
     "@id" : "https://wiki.openstreetmap.org/wiki/Key:oneway:bicycle"
   } ]
 }, {
-  "@id" : "https://w3id.org/openstreetmap/terms#segregated",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Used for combined cycle- and footways."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/openstreetmap/terms#Way"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/openstreetmap/terms#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "segregated=*"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/openstreetmap/terms#SegregatedValue"
-  } ],
-  "http://www.w3.org/ns/prov#wasInfluencedBy" : [ {
-    "@id" : "https://wiki.openstreetmap.org/wiki/Key:segregated"
-  } ]
-}, {
   "@id" : "https://w3id.org/openstreetmap/terms#smoothness",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Provides a classification scheme regarding the physical usability of a way."
+    "@value" : "A classification scheme regarding the physical usability of a way."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2601,7 +2585,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+    "@value" : "The physical surface of elements, particularly regarding material composition and/or structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid16"
@@ -2624,7 +2608,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+    "@value" : "How well-maintained a track is, particularly regarding surface firmness."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"
@@ -2647,7 +2631,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Legal access restriction for all types of land-based vehicles not operated upon rails."
+    "@value" : "The legal access restriction for all types of land-based vehicles not operated upon rails."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/openstreetmap/terms#Way"

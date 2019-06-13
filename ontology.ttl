@@ -24,8 +24,11 @@ osm:    a                              owl:Ontology ;
         cc:license                     <https://creativecommons.org/licenses/by/4.0/> ;
         rdfs:label                     "OpenStreetMaps Vocabulary"@en ;
         vann:preferredNamespacePrefix  "osm" ;
-        vann:preferredNamespaceUri     "https://w3id.org/openstreetmap/terms#";
-        dct:creator                    <https://biblio.ugent.be/person/802002413821> .
+        vann:preferredNamespaceUri     "https://w3id.org/openstreetmap/terms#" ;
+        dct:creator                    <https://biblio.ugent.be/person/802002413821> ;
+        dct:creator                    <https://pietercolpaert.be/#me> ;
+        dct:issued                     "2019-06-13"^^xsd:date ;
+        dct:modified                   "2019-06-13"^^xsd:date .
 
 <https://biblio.ugent.be/person/802002413821> 
         a                 foaf:Person ;

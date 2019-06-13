@@ -4,7 +4,7 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://www.w3.org/2003/01/geo/wgs84_pos", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/openstreetmap/terms" ],
     "iri" : "https://w3id.org/openstreetmap/terms#",
-    "author" : [ "https://biblio.ugent.be/person/802002413821" ],
+    "author" : [ "https://biblio.ugent.be/person/802002413821", "https://pietercolpaert.be/#me" ],
     "description" : {
       "en" : "This ontology describes the OpenStreetMap data model."
     },
@@ -23,6 +23,11 @@
         "language" : "undefined",
         "value" : "https://biblio.ugent.be/person/802002413821",
         "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://pietercolpaert.be/#me",
+        "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
@@ -30,18 +35,30 @@
         "value" : "osm",
         "type" : "label"
       } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-06-13",
+        "type" : "label"
+      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2019-06-13",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "metrics" : {
-    "classCount" : 20,
-    "objectPropertyCount" : 18,
+    "classCount" : 19,
+    "objectPropertyCount" : 17,
     "datatypePropertyCount" : 4,
     "individualCount" : 111
   },
@@ -94,16 +111,13 @@
     "id" : "25",
     "type" : "owl:unionOf"
   }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
     "id" : "35",
     "type" : "owl:unionOf"
   }, {
     "id" : "23",
     "type" : "owl:unionOf"
   }, {
-    "id" : "39",
+    "id" : "38",
     "type" : "owl:unionOf"
   }, {
     "id" : "5",
@@ -112,28 +126,28 @@
     "id" : "33",
     "type" : "owl:unionOf"
   }, {
-    "id" : "40",
+    "id" : "39",
     "type" : "owl:unionOf"
   }, {
-    "id" : "43",
+    "id" : "42",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -274,30 +288,6 @@
         "en" : "highway=trunk"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#FootHighway",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "Designated footpaths; i.e., mainly/exclusively for pedestrians."
-      },
-      "labels" : {
-        "IRI-based" : "FootHighway",
-        "en" : "highway=footway"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Steps",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -320,6 +310,30 @@
       "labels" : {
         "IRI-based" : "Steps",
         "en" : "highway=steps"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#FootHighway",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:highway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Designated footpaths; i.e., mainly/exclusively for pedestrians."
+      },
+      "labels" : {
+        "IRI-based" : "FootHighway",
+        "en" : "highway=footway"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Stop",
@@ -778,6 +792,30 @@
         "en" : "highway=primary_link"
       }
     }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Road",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Droad",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "This tag is used for a road with an unknown classification."
+      },
+      "labels" : {
+        "IRI-based" : "Road",
+        "en" : "highway=road"
+      }
+    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#HighwayCrossing",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -825,33 +863,9 @@
         "IRI-based" : "CycleHighway",
         "en" : "highway=cycleway"
       }
-    }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Road",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Droad",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "This tag is used for a road with an unknown classification."
-      },
-      "labels" : {
-        "IRI-based" : "Road",
-        "en" : "highway=road"
-      }
     } ],
     "comment" : {
-      "en" : "Indicates the role and importance of the way within the road network."
+      "en" : "The kind of road, street or path."
     },
     "id" : "17"
   }, {
@@ -949,30 +963,6 @@
         "en" : "smoothness=horrible"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#VeryBadSmoothness",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:smoothness",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "Usable by cars with high clearance, light-duty off-road vehicles and everything that can use roads with 'horrible' smoothness."
-      },
-      "labels" : {
-        "IRI-based" : "VeryBadSmoothness",
-        "en" : "smoothness=very_bad"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#VeryHorribleSmoothness",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -995,6 +985,30 @@
       "labels" : {
         "IRI-based" : "VeryHorribleSmoothness",
         "en" : "smoothness=very_horrible"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#VeryBadSmoothness",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:smoothness",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Usable by cars with high clearance, light-duty off-road vehicles and everything that can use roads with 'horrible' smoothness."
+      },
+      "labels" : {
+        "IRI-based" : "VeryBadSmoothness",
+        "en" : "smoothness=very_bad"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#BadSmoothness",
@@ -1070,7 +1084,7 @@
       }
     } ],
     "comment" : {
-      "en" : "Provides a classification scheme regarding the physical usability of a way."
+      "en" : "A classification scheme regarding the physical usability of a way."
     },
     "id" : "18"
   }, {
@@ -1120,30 +1134,6 @@
         "en" : "oneway=-1"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Bidirectional",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:oneway",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "This is not a oneway street."
-      },
-      "labels" : {
-        "IRI-based" : "Bidirectional",
-        "en" : "oneway=no"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#InOrder",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -1167,9 +1157,33 @@
         "IRI-based" : "InOrder",
         "en" : "oneway=yes"
       }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Bidirectional",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:oneway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "This is not a oneway street."
+      },
+      "labels" : {
+        "IRI-based" : "Bidirectional",
+        "en" : "oneway=no"
+      }
     } ],
     "comment" : {
-      "en" : "Indicate the access restriction on highways and other linear features."
+      "en" : "Direction restrictions."
     },
     "id" : "20"
   }, {
@@ -1220,7 +1234,7 @@
       }
     } ],
     "comment" : {
-      "en" : "Used to describe a feature which is currently under construction."
+      "en" : "A feature which is currently under construction."
     },
     "id" : "21"
   }, {
@@ -1464,30 +1478,6 @@
         "en" : "barrier=sally_port"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Entrance",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:barrier",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A gap in a linear barrier with nothing that limits passing through."
-      },
-      "labels" : {
-        "IRI-based" : "Entrance",
-        "en" : "barrier=entrance"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Gate",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -1510,6 +1500,30 @@
       "labels" : {
         "IRI-based" : "Gate",
         "en" : "barrier=gate"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Entrance",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:barrier",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A gap in a linear barrier with nothing that limits passing through."
+      },
+      "labels" : {
+        "IRI-based" : "Entrance",
+        "en" : "barrier=entrance"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#BusTrap",
@@ -1584,30 +1598,6 @@
         "en" : "barrier=block"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Chain",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:barrier",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A chain used to prevent motorised vehicles."
-      },
-      "labels" : {
-        "IRI-based" : "Chain",
-        "en" : "barrier=chain"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#CycleBarrier",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -1630,6 +1620,30 @@
       "labels" : {
         "IRI-based" : "CycleBarrier",
         "en" : "barrier=cycle_barrier"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Chain",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:barrier",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A chain used to prevent motorised vehicles."
+      },
+      "labels" : {
+        "IRI-based" : "Chain",
+        "en" : "barrier=chain"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Debris",
@@ -1657,7 +1671,7 @@
       }
     } ],
     "comment" : {
-      "en" : "A barrier is a physical structure which blocks or impedes movement."
+      "en" : "A physical structure which blocks or impedes movement."
     },
     "id" : "26"
   }, {
@@ -1752,14 +1766,6 @@
     "attributes" : [ "union", "anonymous" ],
     "id" : "25"
   }, {
-    "iri" : "https://w3id.org/openstreetmap/terms#SegregatedValue",
-    "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SegregatedValue"
-    },
-    "id" : "37"
-  }, {
     "instances" : 0,
     "union" : [ "2", "3" ],
     "attributes" : [ "union", "anonymous" ],
@@ -1773,7 +1779,7 @@
     "instances" : 0,
     "union" : [ "2", "3" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "39"
+    "id" : "38"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#list",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -1792,89 +1798,14 @@
     "instances" : 0,
     "union" : [ "2", "3" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "40"
+    "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "42",
     "label" : {
       "IRI-based" : "string"
     }
-  }, {
-    "iri" : "https://w3id.org/openstreetmap/terms#CrossingValue",
-    "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/openstreetmap/terms#",
-        "type" : "iri"
-      } ],
-      "wasInfluencedBy" : [ {
-        "identifier" : "wasInfluencedBy",
-        "language" : "undefined",
-        "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "CrossingValue",
-      "en" : "CrossingValue"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/openstreetmap/terms#Uncontrolled",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A generic crossing with no traffic-signals of any type, just road markings."
-      },
-      "labels" : {
-        "IRI-based" : "Uncontrolled",
-        "en" : "crossing=uncontrolled"
-      }
-    }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Unmarked",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A crossing without road markings or traffic lights"
-      },
-      "labels" : {
-        "IRI-based" : "Unmarked",
-        "en" : "crossing=unmarked"
-      }
-    } ],
-    "comment" : {
-      "en" : "This tag is used for more accurately describing specific types of pedestrian crossings."
-    },
-    "id" : "44"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#CyclewayValue",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -1922,30 +1853,6 @@
         "en" : "cycleway=shared_lane"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Shared",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:cycleway",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "In general, this indicates that cyclists share space with other traffic on this highway."
-      },
-      "labels" : {
-        "IRI-based" : "Shared",
-        "en" : "cycleway=shared"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Opposite",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -1968,6 +1875,30 @@
       "labels" : {
         "IRI-based" : "Opposite",
         "en" : "cycleway=opposite"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Shared",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:cycleway",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "In general, this indicates that cyclists share space with other traffic on this highway."
+      },
+      "labels" : {
+        "IRI-based" : "Shared",
+        "en" : "cycleway=shared"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#ShareBusway",
@@ -2067,9 +1998,84 @@
       }
     } ],
     "comment" : {
-      "en" : "Maps cycling infrastructure that is an inherent part of the road."
+      "en" : "Cycling infrastructure that is an inherent part of the road."
     },
     "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/openstreetmap/terms#CrossingValue",
+    "baseIri" : "https://w3id.org/openstreetmap/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/openstreetmap/terms#",
+        "type" : "iri"
+      } ],
+      "wasInfluencedBy" : [ {
+        "identifier" : "wasInfluencedBy",
+        "language" : "undefined",
+        "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CrossingValue",
+      "en" : "CrossingValue"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/openstreetmap/terms#Uncontrolled",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A generic crossing with no traffic-signals of any type, just road markings."
+      },
+      "labels" : {
+        "IRI-based" : "Uncontrolled",
+        "en" : "crossing=uncontrolled"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Unmarked",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:crossing",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A crossing without road markings or traffic lights"
+      },
+      "labels" : {
+        "IRI-based" : "Unmarked",
+        "en" : "crossing=unmarked"
+      }
+    } ],
+    "comment" : {
+      "en" : "A specific type of pedestrian crossing."
+    },
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#TracktypeValue",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -2214,9 +2220,9 @@
       }
     } ],
     "comment" : {
-      "en" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+      "en" : "How well-maintained a track is, particularly regarding surface firmness."
     },
-    "id" : "42"
+    "id" : "41"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -2240,7 +2246,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#FootwayValue",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -2289,7 +2295,7 @@
       }
     } ],
     "comment" : {
-      "en" : "Refines the osm:Footway for sidewalks."
+      "en" : "A specific kind of footway."
     },
     "id" : "12"
   }, {
@@ -2315,30 +2321,6 @@
       "en" : "SurfaceValue"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/openstreetmap/terms#Cobblestone",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "This road has an cobblestone surface."
-      },
-      "labels" : {
-        "IRI-based" : "Cobblestone",
-        "en" : "surface=cobblestone"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Mud",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -2361,6 +2343,30 @@
       "labels" : {
         "IRI-based" : "Mud",
         "en" : "surface=mud"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Cobblestone",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "This road has an cobblestone surface."
+      },
+      "labels" : {
+        "IRI-based" : "Cobblestone",
+        "en" : "surface=cobblestone"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Sand",
@@ -2459,30 +2465,6 @@
         "en" : "surface=grass"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Unpaved",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A loose covering ranging from compacted stone chippings to earth."
-      },
-      "labels" : {
-        "IRI-based" : "Unpaved",
-        "en" : "surface=unpaved"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Paved",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -2505,6 +2487,30 @@
       "labels" : {
         "IRI-based" : "Paved",
         "en" : "surface=paved"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Unpaved",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A loose covering ranging from compacted stone chippings to earth."
+      },
+      "labels" : {
+        "IRI-based" : "Unpaved",
+        "en" : "surface=unpaved"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Asphalt",
@@ -2531,30 +2537,6 @@
         "en" : "surface=asphalt"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Sett",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "Sett paving, formed from natural stones cut to a regular shape. The stones do not cover the surface completely, unlike paving_stones."
-      },
-      "labels" : {
-        "IRI-based" : "Sett",
-        "en" : "surface=sett"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Compacted",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -2577,6 +2559,30 @@
       "labels" : {
         "IRI-based" : "Compacted",
         "en" : "surface=compacted"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Sett",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:surface",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Sett paving, formed from natural stones cut to a regular shape. The stones do not cover the surface completely, unlike paving_stones."
+      },
+      "labels" : {
+        "IRI-based" : "Sett",
+        "en" : "surface=sett"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#FineGravel",
@@ -2748,9 +2754,9 @@
       }
     } ],
     "comment" : {
-      "en" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+      "en" : "The physical surface of elements, particularly regarding material composition and/or structure."
     },
-    "id" : "50"
+    "id" : "49"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#AccessValue",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -2918,30 +2924,6 @@
         "en" : "access=customers"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Permissive",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:access",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "Open to general traffic until such time as the owner revokes the permission."
-      },
-      "labels" : {
-        "IRI-based" : "Permissive",
-        "en" : "access=permissive"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Agricultural",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -2964,6 +2946,30 @@
       "labels" : {
         "IRI-based" : "Agricultural",
         "en" : "access=agricultural"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Permissive",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:access",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Open to general traffic until such time as the owner revokes the permission."
+      },
+      "labels" : {
+        "IRI-based" : "Permissive",
+        "en" : "access=permissive"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#FreeAccess",
@@ -3056,30 +3062,6 @@
         "en" : "access=emergency"
       }
     }, {
-      "iri" : "https://w3id.org/openstreetmap/terms#Designated",
-      "baseIri" : "https://w3id.org/openstreetmap/terms",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/openstreetmap/terms#",
-          "type" : "iri"
-        } ],
-        "wasInfluencedBy" : [ {
-          "identifier" : "wasInfluencedBy",
-          "language" : "undefined",
-          "value" : "https://wiki.openstreetmap.org/wiki/Key:access",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "A preferred or designated route."
-      },
-      "labels" : {
-        "IRI-based" : "Designated",
-        "en" : "access=designated"
-      }
-    }, {
       "iri" : "https://w3id.org/openstreetmap/terms#NoAccess",
       "baseIri" : "https://w3id.org/openstreetmap/terms",
       "annotations" : {
@@ -3102,6 +3084,30 @@
       "labels" : {
         "IRI-based" : "NoAccess",
         "en" : "access=no"
+      }
+    }, {
+      "iri" : "https://w3id.org/openstreetmap/terms#Designated",
+      "baseIri" : "https://w3id.org/openstreetmap/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/openstreetmap/terms#",
+          "type" : "iri"
+        } ],
+        "wasInfluencedBy" : [ {
+          "identifier" : "wasInfluencedBy",
+          "language" : "undefined",
+          "value" : "https://wiki.openstreetmap.org/wiki/Key:access",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A preferred or designated route."
+      },
+      "labels" : {
+        "IRI-based" : "Designated",
+        "en" : "access=designated"
       }
     }, {
       "iri" : "https://w3id.org/openstreetmap/terms#Delivery",
@@ -3129,7 +3135,7 @@
       }
     } ],
     "comment" : {
-      "en" : "Used to describe the legal access for highways and other transportation networks."
+      "en" : "The legal access for highways and other transportation networks."
     },
     "id" : "7"
   } ],
@@ -3176,40 +3182,37 @@
     "id" : "36",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "38",
+    "id" : "37",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "41",
+    "id" : "40",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "44",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "46",
     "type" : "owl:disjointWith"
   }, {
     "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "52",
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "54",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "55",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "56",
+    "id" : "54",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -3258,7 +3261,7 @@
     },
     "domain" : "0",
     "comment" : {
-      "en" : "Used to describe the legal access for highways and other transportation networks."
+      "en" : "The legal access for highways and other transportation networks."
     },
     "attributes" : [ "object" ],
     "id" : "6"
@@ -3286,7 +3289,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Legal access permission for cars."
+      "en" : "The legal access permission for cars."
     },
     "attributes" : [ "object" ],
     "id" : "8"
@@ -3314,7 +3317,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Legal access restriction for all types of land-based vehicles not operated upon rails."
+      "en" : "The legal access restriction for all types of land-based vehicles not operated upon rails."
     },
     "attributes" : [ "object" ],
     "id" : "9"
@@ -3342,7 +3345,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Refines the osm:Footway for sidewalks."
+      "en" : "A specific kind of footway."
     },
     "attributes" : [ "object" ],
     "id" : "11"
@@ -3370,7 +3373,7 @@
     },
     "domain" : "0",
     "comment" : {
-      "en" : "Used for naming an element."
+      "en" : "The default name of an element."
     },
     "attributes" : [ "datatype" ],
     "id" : "13"
@@ -3398,7 +3401,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Maps cycling infrastructure that is an inherent part of the road."
+      "en" : "Cycling infrastructure that is an inherent part of the road."
     },
     "attributes" : [ "object" ],
     "id" : "15"
@@ -3426,7 +3429,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Indicate the access restriction on highways and other linear features."
+      "en" : "The direction restrictions on highways."
     },
     "attributes" : [ "object" ],
     "id" : "19"
@@ -3454,7 +3457,7 @@
     },
     "domain" : "23",
     "comment" : {
-      "en" : "Used to describe a feature which is currently under construction."
+      "en" : "A feature which is currently under construction."
     },
     "attributes" : [ "object" ],
     "id" : "22"
@@ -3482,14 +3485,14 @@
     },
     "domain" : "25",
     "comment" : {
-      "en" : "A barrier is a physical structure which blocks or impedes movement."
+      "en" : "A physical structure which blocks or impedes movement."
     },
     "attributes" : [ "object" ],
     "id" : "24"
   }, {
     "range" : "10",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#highway",
@@ -3515,7 +3518,7 @@
     },
     "domain" : "33",
     "comment" : {
-      "en" : "This the main property used to identify any kind of road, street or path."
+      "en" : "The kind of road, street or path."
     },
     "attributes" : [ "object" ],
     "id" : "32"
@@ -3543,14 +3546,14 @@
     },
     "domain" : "35",
     "comment" : {
-      "en" : "Legal restrictions for bicycles."
+      "en" : "The legal restrictions for bicycles."
     },
     "attributes" : [ "object" ],
     "id" : "34"
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#maxspeed",
@@ -3582,14 +3585,14 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Used to define the maximum legal speed limit, in km/h."
+      "en" : "The maximum legal speed limit, in km/h."
     },
     "attributes" : [ "datatype" ],
-    "id" : "38"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#tracktype",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "range" : "42",
+    "range" : "41",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3610,15 +3613,15 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Measures how well-maintained a track is, particularly regarding surface firmness."
+      "en" : "How well-maintained a track is, particularly regarding surface firmness."
     },
     "attributes" : [ "object" ],
-    "id" : "41"
+    "id" : "40"
   }, {
     "range" : "2",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "45"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#smoothness",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -3643,47 +3646,19 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Provides a classification scheme regarding the physical usability of a way."
+      "en" : "A classification scheme regarding the physical usability of a way."
     },
     "attributes" : [ "object" ],
-    "id" : "46"
+    "id" : "45"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "47"
-  }, {
-    "iri" : "https://w3id.org/openstreetmap/terms#segregated",
-    "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "range" : "37",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/openstreetmap/terms#",
-        "type" : "iri"
-      } ],
-      "wasInfluencedBy" : [ {
-        "identifier" : "wasInfluencedBy",
-        "language" : "undefined",
-        "value" : "https://wiki.openstreetmap.org/wiki/Key:segregated",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "segregated",
-      "en" : "segregated=*"
-    },
-    "domain" : "2",
-    "comment" : {
-      "en" : "Used for combined cycle- and footways."
-    },
-    "attributes" : [ "object" ],
-    "id" : "48"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#surface",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "range" : "50",
+    "range" : "49",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3702,16 +3677,16 @@
       "IRI-based" : "surface",
       "en" : "surface=*"
     },
-    "domain" : "40",
+    "domain" : "39",
     "comment" : {
-      "en" : "Provides information about the physical surface of elements, particularly regarding material composition and/or structure."
+      "en" : "The physical surface of elements, particularly regarding material composition and/or structure."
     },
     "attributes" : [ "object" ],
-    "id" : "49"
+    "id" : "48"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#crossing",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "range" : "44",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3730,12 +3705,12 @@
       "IRI-based" : "crossing",
       "en" : "crossing=*"
     },
-    "domain" : "39",
+    "domain" : "38",
     "comment" : {
-      "en" : "This tag is used for more accurately describing specific types of pedestrian crossings."
+      "en" : "A specific type of pedestrian crossing."
     },
     "attributes" : [ "object" ],
-    "id" : "52"
+    "id" : "50"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#motor_vehicle",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -3760,10 +3735,10 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Legal access restriction for all motor vehicles."
+      "en" : "The legal access restriction for all motor vehicles."
     },
     "attributes" : [ "object" ],
-    "id" : "53"
+    "id" : "51"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#oneway_bicycle",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
@@ -3788,10 +3763,10 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Defines the oneway rules for cyclists."
+      "en" : "The direction restrictions for cyclists specifically."
     },
     "attributes" : [ "object" ],
-    "id" : "54"
+    "id" : "52"
   }, {
     "iri" : "http://purl.org/dc/terms/title",
     "baseIri" : "http://purl.org/dc/terms",
@@ -3801,11 +3776,11 @@
     },
     "domain" : "31",
     "attributes" : [ "external", "datatype" ],
-    "id" : "55"
+    "id" : "53"
   }, {
     "iri" : "https://w3id.org/openstreetmap/terms#hasTag",
     "baseIri" : "https://w3id.org/openstreetmap/terms",
-    "range" : "43",
+    "range" : "42",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3823,6 +3798,6 @@
       "en" : "A tag describes the meaning of a particular element in the OSM data model. \n                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. \n                              This property should be used for tags that don't have their semantics explicitly defined. "
     },
     "attributes" : [ "datatype" ],
-    "id" : "56"
+    "id" : "54"
   } ]
 }
