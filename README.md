@@ -25,7 +25,6 @@ OSM keys are predicates, sticking as close to the familiar OSM format as possibl
 | `surface=*`        | `osm:surface`        |
 | `tracktype=*`      | `osm:tracktype`      |
 | `vehicle=*`        | `osm:vehicle`        |
-|                    |                      |
 
 There are two additional predicates:
 
