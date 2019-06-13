@@ -37,12 +37,12 @@ def read_entities():
 		next(csvfile)
 		spamreader = csv.reader(csvfile)
 		for row in spamreader:
-			key = row[1]
+			key = row[0].split('=')[0]
 			entity_keys[key]["osm_key"] = key.strip()
-			entity_keys[key]["predicate"] = row[2].strip()
+			entity_keys[key]["predicate"] = row[1].strip()
 
-			value = row[0][len(key) + 1:]
-			mapped_value = row[3].strip()
+			value = row[0].split('=')[1]
+			mapped_value = row[2].strip()
 
 			if 'mapping' not in entity_keys[key]:
 				entity_keys[key]["mapping"] = {}
