@@ -95,7 +95,6 @@
   {
     "mapping": {
       "bridleway": "osm:Bridleway",
-      "construction": "osm:Construction",
       "crossing": "osm:HighwayCrossing",
       "cycleway": "osm:CycleHighway",
       "footway": "osm:FootHighway",

@@ -89,7 +89,7 @@ There is an incomplete set of defined tags:
 | cycleway=track             | osm:cycleway       | osm:Track                  |
 | footway=sidewalk           | osm:footway        | osm:Sidewalk               |
 | highway=bridleway          | osm:highway        | osm:Bridleway              |
-| highway=construction       | osm:highway        | osm:Construction           |
+| highway=construction       | osm:construction   | osm:UnderConstruction      |
 | highway=crossing           | osm:highway        | osm:HighwayCrossing        |
 | highway=cycleway           | osm:highway        | osm:CycleHighway           |
 | highway=footway            | osm:highway        | osm:FootHighway            |
