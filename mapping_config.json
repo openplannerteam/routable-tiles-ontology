@@ -95,6 +95,7 @@
   {
     "mapping": {
       "bridleway": "osm:Bridleway",
+      "construction": "osm:UnderConstruction",
       "crossing": "osm:HighwayCrossing",
       "cycleway": "osm:CycleHighway",
       "footway": "osm:FootHighway",
@@ -172,7 +173,7 @@
       "-1": "osm:InReverseOrder",
       "1": "osm:InOrder",
       "no": "osm:InOrder",
-      "yes": "osm:Bidirectional"
+      "yes": "osm:InOrder"
     },
     "osm_key": "oneway",
     "predicate": "osm:oneway"
