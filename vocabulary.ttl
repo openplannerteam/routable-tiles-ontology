@@ -1,0 +1,1167 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix geo:    <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix osm:    <https://w3id.org/openstreetmap/terms#> .
+@prefix qudt:   <http://qudt.org/schema/qudt/> .
+@prefix unit:   <http://qudt.org/vocab/unit/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+
+
+# About
+
+<https://w3id.org/openstreetmap/terms>
+        a                 foaf:Document ;
+        foaf:primaryTopic osm: .
+
+osm:    a                              owl:Ontology ;
+        dct:description                "This ontology describes the OpenStreetMap data model."@en ;
+        cc:license                     <https://creativecommons.org/licenses/by/4.0/> ;
+        rdfs:label                     "OpenStreetMaps Vocabulary"@en ;
+        vann:preferredNamespacePrefix  "osm" ;
+        vann:preferredNamespaceUri     "https://w3id.org/openstreetmap/terms#" ;
+        dct:creator                    <https://hdelva.be> ;
+        dct:creator                    <https://pietercolpaert.be/#me> ;
+        dct:issued                     "2019-06-13T09:00:00"^^xsd:dateTime ;
+        dct:modified                   "2019-06-13T09:00:00"^^xsd:dateTime .
+
+<https://hdelva.be/> 
+        a                 foaf:Person ;
+        foaf:name         "Harm Delva" ;
+        foaf:mbox         <harm.delva@gmail.com> ;
+        foaf:mbox         <harm.delva@ugent.be> .
+
+
+# Element Classes
+
+osm:Node  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:subClassOf       osm:Element ;
+        rdfs:comment          """A node is one of the core elements in the OpenStreetMap data model.
+                              It consists of a single point in space defined by its latitude, longitude and node id."""@en ;
+        rdfs:label            "Node"@en ;
+        rdfs:subClassOf       geo:Point ;
+        owl:disjointWith      osm:Way , osm:Relation ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Node> .
+        
+osm:Way  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:subClassOf       osm:Element ;
+        rdfs:comment          "A way is an ordered list of nodes which normally also has at least one tag."@en ;
+        rdfs:label            "Way"@en ;
+        owl:disjointWith      osm:Node , osm:Relation ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Way> .
+        
+osm:Relation  
+        a                     rdfs:Class , owl:Class ;
+        rdfs:subClassOf       osm:Element ;
+        rdfs:comment          """A relation consists of one or more tags and also an ordered list of one or more nodes, ways and/or relations as members.
+                              It is used to define logical or geographic relationships between other elements."""@en ;
+        rdfs:label            "Relation"@en ;
+        owl:disjointWith      osm:Node , osm:Way ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Relation> .
+        
+osm:Element
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "Elements are the basic components of OpenStreetMap's conceptual data model of the physical world."@en ;
+        rdfs:label            "Element"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Elements> .
+
+
+# Object Properties
+
+osm:hasNodes
+        a                     owl:ObjectProperty , rdf:Property ;
+        rdfs:comment          """An ordered collection of nodes that describe the way. 
+                              These may be fragmented over multiple predicates due to tiling for example.
+                              Each fragment should have enough overlap to reconstruct the original way."""@en ;
+        rdfs:label            "hasNodes"@en ;
+        rdfs:isDefinedBy      osm: ;
+        rdfs:domain           osm:Way .
+
+osm:access
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal access for highways and other transportation networks."@en ;
+        rdfs:label             "access=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:access> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:AccessValue .
+
+osm:barrier
+        a                      owl:ObjectProperty , rdf:Property ;
+        owl:equivalentProperty <http://www.wikidata.org/entity/Q264661> ;
+        rdfs:comment           "A physical structure which blocks or impedes movement."@en ;
+        rdfs:label             "barrier=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:barrier> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:BarrierValue .
+
+osm:bicycle
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal restrictions for bicycles."@en ;
+        rdfs:label             "bicycle=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:bicycle> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:AccessValue .
+
+osm:construction
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "A feature which is currently under construction."@en ;
+        rdfs:label             "construction=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:construction> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:ConstructionValue .
+
+osm:crossing
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "A specific type of pedestrian crossing."@en ;
+        rdfs:label             "crossing=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:crossing> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:CrossingValue .
+
+osm:cycleway
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "Cycling infrastructure that is an inherent part of the road."@en ;
+        rdfs:label             "cycleway=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:cycleway> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:CyclewayValue .
+
+osm:footway
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "A specific kind of footway."@en ;
+        rdfs:label             "footway=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:footway> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:FootwayValue .
+
+osm:highway
+        a                      owl:ObjectProperty , rdf:Property ;
+        owl:equivalentProperty <http://www.wikidata.org/entity/Q57977870> ;
+        rdfs:comment           "The kind of road, street or path."@en ;
+        rdfs:label             "highway=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:highway> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:HighwayValue .
+
+osm:motor_vehicle
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal access restriction for all motor vehicles."@en ;
+        rdfs:label             "motor_vehicle=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:motor_vehicle> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:AccessValue .
+
+osm:motorcar
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal access permission for cars."@en ;
+        rdfs:label             "motorcar=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:motorcar> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:AccessValue .
+
+osm:oneway_bicycle
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The direction restrictions for cyclists specifically."@en ;
+        rdfs:label             "oneway:bicycle=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:oneway:bicycle> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:OnewayValue .
+
+osm:oneway
+        a                      owl:ObjectProperty , rdf:Property ;
+        owl:equivalentProperty <http://www.wikidata.org/entity/Q786886> ;
+        rdfs:comment           "The direction restrictions on highways."@en ;
+        rdfs:label             "oneway=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:oneway> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:OnewayValue .
+
+osm:smoothness
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "A classification scheme regarding the physical usability of a way."@en ;
+        rdfs:label             "smoothness=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <hhttps://wiki.openstreetmap.org/wiki/Key:smoothness> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:SmoothnessValue .
+
+osm:surface
+        a                      owl:ObjectProperty , rdf:Property ;
+        owl:equivalentProperty <http://www.wikidata.org/entity/Q1049667> ;
+        rdfs:comment           "The physical surface of elements, particularly regarding material composition and/or structure."@en ;
+        rdfs:label             "surface=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:surface> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:SurfaceValue .
+
+osm:tracktype
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "How well-maintained a track is, particularly regarding surface firmness."@en ;
+        rdfs:label             "tracktype=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:tracktype> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:TracktypeValue .
+
+osm:vehicle
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal access restriction for all types of land-based vehicles not operated upon rails."@en ;
+        rdfs:label             "vehicle=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:vehicle> ;
+        rdfs:domain            osm:Way ;
+        rdfs:range             osm:AccessValue .
+
+# Data properties
+
+osm:name
+        a                       owl:DatatypeProperty , rdf:Property ;
+        rdfs:subPropertyOf      dct:title ;
+        owl:equivalentProperty  <http://www.wikidata.org/entity/Q82799> ;
+        rdfs:comment            "The default name of an element."@en ;
+        rdfs:label              "name=*"@en ;
+        rdfs:isDefinedBy        osm: ;
+        prov:wasInfluencedBy    <https://wiki.openstreetmap.org/wiki/Key:name> ;
+        rdfs:domain             osm:Element ;
+        rdfs:range              rdfs:Literal .
+
+osm:hasTag
+        a                     owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment          """A tag describes the meaning of a particular element in the OSM data model. 
+                              It consists of two free format text fields; a 'key' and a 'value' and are formatted as '{key}={value}'. 
+                              This property should be used for tags that don't have their semantics explicitly defined. """@en ;
+        rdfs:label            "hasTag"@en ;
+        rdfs:isDefinedBy      osm: ;
+        rdfs:domain           osm:Element ;
+        rdfs:range            xsd:string .
+
+osm:maxspeed
+        a                     owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment          "The maximum legal speed limit, in km/h."@en ;
+        rdfs:label            "maxspeed=*"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:maxspeed> ;
+        qudt:hasUnit          unit:KM-PER-HR ;
+        rdfs:domain           osm:Way ;
+        rdfs:range            xsd:double .
+
+
+# Tag Values
+
+osm:AccessValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "The legal access for highways and other transportation networks."@en ;
+        rdfs:label            "AccessValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:BarrierValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A physical structure which blocks or impedes movement."@en ;
+        rdfs:label            "BarrierValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:ConstructionValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A feature which is currently under construction."@en ;
+        rdfs:label            "ConstructionValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:construction> .
+
+osm:CrossingValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A specific type of pedestrian crossing."@en ;
+        rdfs:label            "CrossingValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+
+osm:CyclewayValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "Cycling infrastructure that is an inherent part of the road."@en ;
+        rdfs:label            "CyclewayValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:cycleway> .
+
+osm:FootwayValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A specific kind of footway."@en ;
+        rdfs:label            "FootwayValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:footway> .
+
+osm:HighwayValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "The kind of road, street or path."@en ;
+        rdfs:label            "HighwayValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:OnewayValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "Direction restrictions."@en ;
+        rdfs:label            "OnewayValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+
+osm:SmoothnessValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "A classification scheme regarding the physical usability of a way."@en ;
+        rdfs:label            "SmoothnessValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:SurfaceValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "The physical surface of elements, particularly regarding material composition and/or structure."@en ;
+        rdfs:label            "SurfaceValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:TracktypeValue
+        a                     rdfs:Class , owl:Class ;
+        rdfs:comment          "How well-maintained a track is, particularly regarding surface firmness."@en ;
+        rdfs:label            "TracktypeValue"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+# Individuals
+
+## Access
+
+osm:Agricultural  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only for agricultural traffic."@en ;
+        rdfs:label            "access=agricultural"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Customers  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only for customers of the element."@en ;
+        rdfs:label            "access=customers"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Delivery  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only when delivering to the element."@en ;
+        rdfs:label            "access=customers"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Designated  
+        a                     osm:AccessValue ;
+        rdfs:comment          "A preferred or designated route."@en ;
+        rdfs:label            "access=designated"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Destination  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only when travelling to this element/area; i.e., local traffic only."@en ;
+        rdfs:label            "access=destination"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Discouraged  
+        a                     osm:AccessValue ;
+        rdfs:comment          "A legal right of way exists but usage is officially discouraged."@en ;
+        rdfs:label            "access=discouraged"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Dismount  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Permitted for some vehicle (or animal) only if you dismount."@en ;
+        rdfs:label            "access=dismount"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Emergency  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only for emergency vehicles."@en ;
+        rdfs:label            "access=emergency"@en ;
+        rdfs:isDefinedBy      osm: .
+
+osm:Forestry  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only for forestry traffic."@en ;
+        rdfs:label            "access=forestry"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:FreeAccess  
+        a                     osm:AccessValue ;
+        rdfs:comment          "The public has an official, legally-enshrined right of access; i.e., it's a right of way."@en ;
+        rdfs:label            "access=yes"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:NoAccess  
+        a                     osm:AccessValue ;
+        rdfs:comment          "No access for the general public."@en ;
+        rdfs:label            "access=no"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:OfficialAccess  
+        a                     osm:AccessValue ;
+        rdfs:comment          "A way legally dedicated to specific modes of travel by a law or by the rules of traffic."@en ;
+        rdfs:label            "access=official"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag:access%3Dofficial> .
+
+osm:Permissive  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Open to general traffic until such time as the owner revokes the permission."@en ;
+        rdfs:label            "access=permissive"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:Private  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Only with individual permission."@en ;
+        rdfs:label            "access=private"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+osm:UseSidepath  
+        a                     osm:AccessValue ;
+        rdfs:comment          "Can only be used in countries with compulsory cycleways and gives access information on parallel roads."@en ;
+        rdfs:label            "access=use_sidepath"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:access> .
+
+## Barrier
+
+osm:Block  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A large, solid, immobile block that can be moved only with heavy machinery or great effort."@en ;
+        rdfs:label            "barrier=block"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Bollard  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "Solid (usually concrete or metal) pillar or pillars in the middle of the road to prevent passage by some traffic."@en ;
+        rdfs:label            "barrier=bollard"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:bollard> .
+
+osm:BorderControl  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "This is a control point at an international border between two countries. Passports or other forms of ID will be checked."@en ;
+        rdfs:label            "barrier=border_control"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:border_control> .
+
+osm:BumpGate  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A bump gate is a drive-through gate used in rural areas to provide a barrier to livestock that does not require the driver to exit the vehicle."@en ;
+        rdfs:label            "barrier=bump_gate"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://en.wikipedia.org/wiki/Bump_gate> .
+
+osm:BusTrap  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A bus trap is a metal grate placed over a ditch or pit in the road with tines (sides) spaced far enough apart that small-diameter-wheeled (narrower axle) vehicles fall in between the tines but close enough that larger-diameter-wheeled vehicles, such as buses, may pass."@en ;
+        rdfs:label            "barrier=bus_trap"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://en.wikipedia.org/wiki/Bus_trap> .
+
+osm:CattleGrid  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "Bars in the road surface that allow wheeled vehicles but not animals to cross."@en ;
+        rdfs:label            "barrier=cattle_grid"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Chain  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A chain used to prevent motorised vehicles."@en ;
+        rdfs:label            "barrier=chain"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:CycleBarrier  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "Barriers to bicycle traffic, most typically a pair of staggered steel bars perpendicular to the way itself whose gaps allow pedestrians to pass."@en ;
+        rdfs:label            "barrier=cycle_barrier"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Debris  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A road is blocked by debris with or without ground. This might be for short or long time. Often used as first step in blocking an abandoned road."@en ;
+        rdfs:label            "barrier=debris"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Entrance  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A gap in a linear barrier with nothing that limits passing through."@en ;
+        rdfs:label            "barrier=entrance"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Gate  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "An entrance that can be opened or closed to get through the barrier."@en ;
+        rdfs:label            "barrier=gate"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:LiftGate  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A lift gate (boom barrier) is a bar, or pole pivoted in such a way as to allow the boom to block vehicular access through a controlled point."@en ;
+        rdfs:label            "barrier=lift_gate"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:SallyPort  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A sally port is used to pass through thick or city walls, and is a type of covered gate with two doors."@en ;
+        rdfs:label            "barrier=sally_port"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:SwingGate  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "Similar to a lift gate but rotates sidewards to open."@en ;
+        rdfs:label            "barrier=swing_gate"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:TollBooth  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A road usage toll or fee is collected here."@en ;
+        rdfs:label            "barrier=toll_booth"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+osm:Turnstile  
+        a                     osm:BarrierValue ;
+        rdfs:comment          "A turnstile (also called baffle gate) is used to allow one person at a time to pass."@en ;
+        rdfs:label            "barrier=turnstile"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:barrier> .
+
+## Construction
+
+osm:UnderConstruction  
+        a                     osm:ConstructionValue ;
+        rdfs:comment          "Indicates that this element is under construction."@en ;
+        rdfs:label            "construction=yes"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Aconstruction%3Dyes> .
+
+## Crossing
+
+osm:Uncontrolled  
+        a                     osm:CrossingValue ;
+        rdfs:comment          "A generic crossing with no traffic-signals of any type, just road markings."@en ;
+        rdfs:label            "crossing=uncontrolled"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+
+osm:Unmarked  
+        a                     osm:CrossingValue ;
+        rdfs:comment          "A crossing without road markings or traffic lights"@en ;
+        rdfs:label            "crossing=unmarked"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:crossing> .
+
+## Cycleway
+
+osm:Lane  
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "Two-way streets where there are cycle lanes on both sides of the road."@en ;
+        rdfs:label            "cycleway=lane"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dlane> .
+
+osm:Opposite  
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "Cyclists are permitted to travel in both directions on a road which is one-way for normal traffic."@en ;
+        rdfs:label            "cycleway=opposite"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite> .
+
+osm:OppositeLane
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "A one-way street that has a cycling lane going in the opposite direction to normal traffic flow."@en ;
+        rdfs:label            "cycleway=opposite_lane"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_lane> .
+
+osm:OppositeTrack
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "A cycle track travelling in the opposite direction to other traffic."@en ;
+        rdfs:label            "cycleway=opposite_track"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dopposite_track> .
+
+osm:ShareBusway
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "A cycle lane taking the form of a bus lane that is also designated for use by cyclists."@en ;
+        rdfs:label            "cycleway=share_busway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Acycleway%3Dshare_busway> .
+
+osm:Shared
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "In general, this indicates that cyclists share space with other traffic on this highway."@en ;
+        rdfs:label            "cycleway=shared"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:cycleway> .
+
+osm:SharedLane
+        a                     osm:CyclewayValue ;
+        rdfs:comment          "Roads which contain a shared lane marking, or sharrow, to indicate that the travel lane is shared by bicycles and other vehicles."@en ;
+        rdfs:label            "cycleway=shared_lane"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Proposed_features/shared_lane> .
+
+## Footway
+
+osm:Sidewalk
+        a                     osm:FootwayValue ;
+        rdfs:comment          "A sidewalk that's distinct from the carriageway."@en ;
+        rdfs:label            "footway=sidewalk"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Afootway%3Dsidewalk> .
+
+## Highway
+
+osm:Bridleway  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "A way intended for use by horse riders."@en ;
+        rdfs:label            "highway=bridleway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dbridleway> .
+
+osm:CycleHighway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1628979> ;
+        rdfs:comment          "For designated cycleways."@en ;
+        rdfs:label            "highway=cycleway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:FootHighway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q3352369> ;
+        rdfs:comment          "Designated footpaths; i.e., mainly/exclusively for pedestrians."@en ;
+        rdfs:label            "highway=footway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:HighwayCrossing  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q8010> ;
+        rdfs:comment          "Pedestrians can cross a street here."@en ;
+        rdfs:label            "highway=crossing"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dcrossing> .
+
+osm:GiveWay  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Points where a traffic sign instructs traffic to cede priority."@en ;
+        rdfs:label            "highway=give_way"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dgive_way> .
+
+osm:LivingStreet  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1628979> ;
+        rdfs:comment          "For living streets, which are residential streets where pedestrians have legal priority over cars."@en ;
+        rdfs:label            "highway=living_street"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Motorway  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q46622> ;
+        rdfs:comment          "A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder."@en ;
+        rdfs:label            "highway=motorway"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:MotorwayLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a motorway."@en ;
+        rdfs:label            "highway=motorway_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Path  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "A non-specific path."@en ;
+        rdfs:label            "highway=path"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .    
+
+osm:Primary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after trunks."@en ;
+        rdfs:label            "highway=primary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:PrimaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a primary road."@en ;
+        rdfs:label            "highway=primary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Proposed  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "For roads that are about to be built, but where any construction work hasn't yet been started."@en ;
+        rdfs:label            "highway=proposed"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dproposed> .
+
+osm:Residential  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Roads which serve as an access to housing, without function of connecting settlements. Often lined with housing."@en ;
+        rdfs:label            "highway=residential"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Road  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "This tag is used for a road with an unknown classification."@en ;
+        rdfs:label            "highway=road"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Droad> .
+
+osm:Secondary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after primary roads."@en ;
+        rdfs:label            "highway=secondary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:SecondaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a secondary road."@en ;
+        rdfs:label            "highway=secondary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Service  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "For access roads to, or within an industrial estate, camp site, business park, car park etc."@en ;
+        rdfs:label            "highway=service"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Steps  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q12511> ;
+        rdfs:comment          "Flights of steps on footways and paths."@en ;
+        rdfs:label            "highway=steps"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dsteps> .
+
+osm:Stop  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Points at which vehicles are required to stop."@en ;
+        rdfs:label            "highway=stop"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dstop> .
+
+osm:Tertiary  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The next most important roads in a country's system, after secondary roads."@en ;
+        rdfs:label            "highway=tertiary"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:TertiaryLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a tertiary road."@en ;
+        rdfs:label            "highway=tertiary_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Track  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Roads for mostly agricultural or forestry uses. If used in the context of a cycleway this means a cycle track running parallel to a road."@en ;
+        rdfs:label            "highway=track"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:TrafficSignals  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "Signalling devices positioned at road intersections, pedestrian crossings and other locations to control competing flows of traffic. "@en ;
+        rdfs:label            "highway=traffic_signals"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Ahighway%3Dtraffic_signals> .
+
+osm:Trunk  
+        a                     osm:HighwayValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q1302778> ;
+        rdfs:comment          "The most important roads in a country's system that aren't motorways."@en ;
+        rdfs:label            "highway=trunk"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:TrunkLink  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The link roads leading to/from a trunk road."@en ;
+        rdfs:label            "highway=trunk_link"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+osm:Unclassified  
+        a                     osm:HighwayValue ;
+        rdfs:comment          "The least important through roads in a country's system."@en ;
+        rdfs:label            "highway=unclassified"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:highway> .
+
+
+## Oneway
+
+osm:Bidirectional  
+        a                     osm:OnewayValue ;
+        rdfs:comment          "This is not a oneway street."@en ;
+        rdfs:label            "oneway=no"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+
+osm:InOrder  
+        a                     osm:OnewayValue ;
+        rdfs:comment          "This is a oneway street, with the direction being the same order of the way nodes."@en ;
+        rdfs:label            "oneway=yes"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+
+osm:InReverseOrder  
+        a                     osm:OnewayValue ;
+        rdfs:comment          "This is a oneway street, with the direction being the reverse of the order of the way nodes."@en ;
+        rdfs:label            "oneway=-1"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:oneway> .
+
+
+## Smoothness
+
+osm:ExcellentSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by roller blades, skate boards and everything that can use roads with 'good' smoothness."@en ;
+        rdfs:label            "smoothness=excellent"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:GoodSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by racing bikes and everything that can use roads with 'intermediate' smoothness."@en ;
+        rdfs:label            "smoothness=good"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:IntermediateSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by city bikes, sport cars, wheel chairs and everything that can use roads with 'bad' smoothness."@en ;
+        rdfs:label            "smoothness=intermediate"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:BadSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by trekking bikes, normal cars and everything that can use roads with 'very bad' smoothness."@en ;
+        rdfs:label            "smoothness=bad"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:VeryBadSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by cars with high clearance, light-duty off-road vehicles and everything that can use roads with 'horrible' smoothness."@en ;
+        rdfs:label            "smoothness=very_bad"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:HorribleSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by heavy-duty off-road vehicles and everything that can use roads with 'very horrible' smoothness."@en ;
+        rdfs:label            "smoothness=horrible"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:VeryHorribleSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Usable by tractors, ATVs and tanks."@en ;
+        rdfs:label            "smoothness=very_horrible"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+osm:ImpassableSmoothness  
+        a                     osm:SmoothnessValue ;
+        rdfs:comment          "Not usable by wheeled vehicles."@en ;
+        rdfs:label            "smoothness=impassable"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:smoothness> .
+
+
+## Surface
+
+osm:Asphalt  
+        a                     osm:SurfaceValue ;
+        owl:sameAs            <http://www.wikidata.org/entity/Q189259> ;
+        rdfs:comment          "This road has an asphalt surface."@en ;
+        rdfs:label            "surface=asphalt"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dasphalt> .
+
+osm:Cobblestone  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "This road has an cobblestone surface."@en ;
+        rdfs:label            "surface=cobblestone"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Compacted  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "A mixture of larger (e.g., gravel) and smaller (e.g., sand) parts, compacted so the surface is more stable than loose gravel."@en ;
+        rdfs:label            "surface=compacted"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Tag%3Asurface%3Dcompacted> .
+
+osm:Concrete  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Cement based concrete."@en ;
+        rdfs:label            "surface=concrete"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Dirt  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "This road's surface is just dirt (earth)."@en ;
+        rdfs:label            "surface=dirt"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:FineGravel  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "A multilayer pavement with a stone or gravel basis and a topmost surface of firm, granular gravel."@en ;
+        rdfs:label            "surface=fine_gravel"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Grass  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Grass covered ground."@en ;
+        rdfs:label            "surface=grass"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Gravel  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Broken/crushed rock with sharp edges."@en ;
+        rdfs:label            "surface=gravel"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Ground  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "No special surface, the ground itself has marks of human or animal usage."@en ;
+        rdfs:label            "surface=ground"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Mud  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Like the ground surface, but usually wet."@en ;
+        rdfs:label            "surface=mud"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Paved  
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "A non-specific paved surface."@en ;
+        rdfs:label            "surface=paved"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:PavingStones
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "A relatively smooth surface paved with stones."@en ;
+        rdfs:label            "surface=paving_stones"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Pebblestone
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Loosely arranged smooth stones."@en ;
+        rdfs:label            "surface=pebblestone"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Sand
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Small to very small fractions of rock."@en ;
+        rdfs:label            "surface=sand"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Sett
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Sett paving, formed from natural stones cut to a regular shape. The stones do not cover the surface completely, unlike paving_stones."@en ;
+        rdfs:label            "surface=sett"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:UnhewnCobblestone
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Cobblestone paving, formed from natural, uncut, overall rounded stones. Firmly attached to a ground, unlike pebblestone."@en ;
+        rdfs:label            "surface=unhewn_cobblestone"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Unpaved
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "A loose covering ranging from compacted stone chippings to earth."@en ;
+        rdfs:label            "surface=unpaved"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+osm:Wood
+        a                     osm:SurfaceValue ;
+        rdfs:comment          "Wood."@en ;
+        rdfs:label            "surface=wood"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:surface> .
+
+
+## Tracktype
+
+osm:Grade1
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Solid. Usually a paved or sealed surface."@en ;
+        rdfs:label            "tracktype=grade1"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade2
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Solid. Usually an unpaved track with surface of gravel."@en ;
+        rdfs:label            "tracktype=grade2"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade3
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Mostly solid. Even mixture of hard and soft materials."@en ;
+        rdfs:label            "tracktype=grade3"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade4
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Mostly soft. Almost always an unpaved track prominently with soil/sand/grass, but with some hard or compacted materials mixed in."@en ;
+        rdfs:label            "tracktype=grade4"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+osm:Grade5
+        a                     osm:TracktypeValue ;
+        rdfs:comment          "Soft. Almost always an unpaved track lacking additional materials, same surface as surrounding terrain."@en ;
+        rdfs:label            "tracktype=grade5"@en ;
+        rdfs:isDefinedBy      osm: ;
+        prov:wasInfluencedBy  <https://wiki.openstreetmap.org/wiki/Key:tracktype> .
+
+
+# External Definitions
+
+cc:license
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://creativecommons.org/ns#> ;
+    rdfs:label "license" .
+
+dct:creator
+   a owl:ObjectProperty ;
+   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+   rdfs:label "creator" .
+
+dct:description
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+    rdfs:label "description" .
+
+dct:issued
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+    rdfs:label "issued" .
+
+dct:modified
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+    rdfs:label "modified" .
+
+foaf:Document 
+    a rdfs:Class ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+    rdfs:label "Document" .
+
+foaf:mbox
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+    rdfs:label "mbox" .
+
+foaf:name
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+    rdfs:label "name" .
+
+foaf:primaryTopic
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+    rdfs:label "primaryTopic" .
+
+geo:Point 
+    a rdfs:Class ;
+    rdfs:isDefinedBy <https://www.w3.org/2003/01/geo/wgs84_pos#> ;
+    rdfs:label "Point" .
+
+prov:wasInfluencedBy
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+    rdfs:label "prov:wasInfluencedBy" .
+
+vann:preferredNamespacePrefix
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <hhttp://purl.org/vocab/vann/> ;
+    rdfs:label "preferredNamespacePrefix" .
+
+vann:preferredNamespaceUri
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <hhttp://purl.org/vocab/vann/> ;
+    rdfs:label "preferredNamespaceUri" .
