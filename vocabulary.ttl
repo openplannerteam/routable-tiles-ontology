@@ -143,6 +143,15 @@ osm:cycleway
         rdfs:domain            osm:Way ;
         rdfs:range             osm:CyclewayValue .
 
+osm:foot
+        a                      owl:ObjectProperty , rdf:Property ;
+        rdfs:comment           "The legal restrictions for pedestrians."@en ;
+        rdfs:label             "foot=*"@en ;
+        rdfs:isDefinedBy       osm: ;
+        prov:wasInfluencedBy   <https://wiki.openstreetmap.org/wiki/Key:foot> ;
+        rdfs:domain            osm:Element ;
+        rdfs:range             osm:AccessValue .
+
 osm:footway
         a                      owl:ObjectProperty , rdf:Property ;
         rdfs:comment           "A specific kind of footway."@en ;
